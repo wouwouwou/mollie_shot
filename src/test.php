@@ -42,3 +42,25 @@ $ideal_payment = $mollie->payments->create(array(
     "method" => Mollie_API_Object_Method::IDEAL,
     "issuer" => $selected_issuer_id, // e.g. "ideal_INGBNL2A"
 ));
+
+/*
+ * Example 6 - How to get the currently activated payment methods.
+ */
+try
+{
+    /*
+     * Get all the activated methods for this API key.
+     */
+    $methods = $mollie->methods->all();
+    foreach ($methods as $method)
+    {
+        echo '<div style="line-height:40px; vertical-align:top">';
+        echo '<img src="' . htmlspecialchars($method->image->normal) . '"> ';
+        echo htmlspecialchars($method->description) . ' (' .  htmlspecialchars($method->id) . ')';
+        echo '</div>';
+    }
+}
+catch (Mollie_API_Exception $e)
+{
+    echo "API call failed: " . htmlspecialchars($e->getMessage());
+}

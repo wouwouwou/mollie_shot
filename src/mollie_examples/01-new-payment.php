@@ -30,14 +30,14 @@ try
     $path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
     /*
      * Payment parameters:
-     *   amount        Amount in EUROs. This example creates a € 10,- payment.
+     *   amount        Amount in EUROs. This example creates a € 0,01 payment.
      *   description   Description of the payment.
      *   redirectUrl   Redirect location. The customer will be redirected there after the payment.
      *   webhookUrl    Webhook location, used to report when the payment changes state.
      *   metadata      Custom metadata that is stored with the payment.
      */
     $payment = $mollie->payments->create(array(
-        "amount"       => 10.00,
+        "amount"       => 0.01,
         "description"  => "My first API payment",
         "redirectUrl"  => "{$protocol}://{$hostname}{$path}/03-return-page.php?order_id={$order_id}",
         "webhookUrl"   => "{$protocol}://{$hostname}{$path}/02-webhook-verification.php",
