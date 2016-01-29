@@ -1,5 +1,9 @@
 {
+    "name": "shot/betaalmodule",
+    "description": "Dit is de betaalmodule voor de website van het Studenten Harmonie Orkest Twente (SHOT)",
+    "licence": "Apache-2.0",
     "require": {
-        "monolog/monolog": "1.0.*"
+        "mollie/mollie-api-php": "1.3.x",
+        "mollie/oauth2-mollie-php": "^1.0"
     }
 }
