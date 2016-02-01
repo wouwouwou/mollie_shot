@@ -1,34 +1,35 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Wouter
- * Date: 1-2-2016
- * Time: 10:36
- */
+<?php require "returncode.php"?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHOT-SOLO Concert | Kaartverkoop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-/**
- * De returnpagina die de klant te zien krijgt na betaling.
- */
+<div class="container">
+    <div class="jumbotron">
+        <h2>Bestelling voltooid!</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <h3>Uw bestelling is voltooid!</h3>
+            <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens inclusief uw referentiecode. <br>
+            Met deze gegevens kunt u uw toegangskaart(en) bij aankomst ophalen.</h5>
+        </div>
+        <div class="col-md-3">
+            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
+                 style="width: 400px;"class="img-responsive img-rounded">
+            <img src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21"
+                 alt="SOLO Logo" style="width: 400px;"class="img-responsive img-rounded">
+        </div>
+    </div>
+</div>
 
-$status = database_read($_GET["order_id"]);
-/*
- * Determine the url parts to these example files.
- */
-$protocol = isset($_SERVER['HTTPS']) && strcasecmp('off', $_SERVER['HTTPS']) !== 0 ? "https" : "http";
-$hostname = $_SERVER['HTTP_HOST'];
-$path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
-echo "<p>Your payment status is '" . htmlspecialchars($status) . "'.</p>";
-echo "<p>";
-echo '<a href="' . $protocol . '://' . $hostname . $path . '/01-new-payment.php">Retry example 1</a><br>';
-echo '<a href="' . $protocol . '://' . $hostname . $path . '/04-ideal-payment.php">Retry example 4</a><br>';
-echo "</p>";
-/*
- * NOTE: This example uses a text file as a database. Please use a real database like MySQL in production code.
- */
-function database_read ($order_id)
-{
-    $order_id = intval($order_id);
-    $database = dirname(__FILE__) . "/orders/order-{$order_id}.txt";
-    $status = @file_get_contents($database);
-    return $status ? $status : "unknown order";
-}
+</body>
+</html>

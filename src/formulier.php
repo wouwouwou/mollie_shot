@@ -3,31 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>SHOT-SOLO Concert | Kaartverkoop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Bestelformulier Toegangskaarten SHOT-SOLO Concert</h1>
-<h4>Voer hier uw gegevens in:</h4>
-<form method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
-    <label>Voornaam:</label><br>
-    <input type="text" name="firstname"><br><br>
-    <label>Achternaam:</label><br>
-    <input type="text" name="lastname"><br><br>
-    <label>E-mail:</label><br>
-    <input type="text" name="e-mail"><br><br>
-    <label>Aantal toegangskaarten:</label><br>
-    <select name="aantal">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-    </select><br><br>
-    <input type="submit" value="Bestellen en betalen via iDeal">
-</form>
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>Bestelformulier Toegangskaarten SHOT-SOLO Concert</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <h3>Welkom op de bestelwebsite voor het SHOT-SOLO Concert! </h3>
+            <h5>U kunt hier toeganskaarten bestellen voor het concert wat plaatsvindt op 10 april
+            om 15:30 uur. De toegangskaarten zijn &euro;10,00 per stuk en kunnen hier al&eacute;&eacute;n worden afgerekend
+            door middel van iDeal. Als u eenmaal de kaarten heeft besteld kunt u deze bij aankomst ophalen.<br><br></h5>
+            <h4>Vul hier uw gegevens in:</h4>
+        </div>
+
+        <div class="col-md-3">
+            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
+                 style="width: 400px;"class="img-responsive img-rounded">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-8">
+            <form class="form-horizontal" role="form" method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="firstname">Voornaam:</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="firstname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="lastname">Achternaam:</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="lastname">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="e-mail">E-mail:</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="e-mail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="aantal">Aantal toegangskaarten:</label>
+                    <div class="col-sm-2">
+                        <select class="form-control" name="aantal">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Bestellen en betalen via iDeal</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3">
+            <img src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21"
+                 alt="SOLO Logo" style="width: 400px;"class="img-responsive img-rounded">
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

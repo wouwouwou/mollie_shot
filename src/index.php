@@ -88,7 +88,6 @@ function database_write ($firstname, $lastname, $e_mail, $order_id, $status, $pr
 
     $sql = "INSERT INTO orders (firstname, lastname, email, order_id, status, price)
             VALUES ('$firstname', '$lastname', '$e_mail', $order_id, '$status', $price)";
-    echo $sql;
     $result = $conn->query($sql);
 
     if ($result == false) {

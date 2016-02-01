@@ -48,7 +48,6 @@ function database_write ($order_id, $status)
     $conn = new mysqli($servername, $username, $password, $dbname);
 
     $sql = "UPDATE orders SET status='$status' WHERE order_id=$order_id";
-    echo $sql;
     $result = $conn->query($sql);
 
     if ($result == false) {
