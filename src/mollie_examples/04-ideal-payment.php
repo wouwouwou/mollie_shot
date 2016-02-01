@@ -48,7 +48,7 @@ try
     $path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
     /*
      * Payment parameters:
-     *   amount        Amount in EUROs. This example creates a € 27.50 payment.
+     *   amount        Amount in EUROs. This example creates a € 0.01 payment.
      *   method        Payment method "ideal".
      *   description   Description of the payment.
      *   redirectUrl   Redirect location. The customer will be redirected there after the payment.
@@ -56,7 +56,7 @@ try
      *   issuer        The customer's bank. If empty the customer can select it later.
      */
     $payment = $mollie->payments->create(array(
-        "amount"       => 27.50,
+        "amount"       => 0.01,
         "method"       => Mollie_API_Object_Method::IDEAL,
         "description"  => "My first iDEAL payment",
         "redirectUrl"  => "{$protocol}://{$hostname}{$path}/03-return-page.php?order_id={$order_id}",
