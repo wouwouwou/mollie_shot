@@ -60,6 +60,7 @@ try
         "method"       => Mollie_API_Object_Method::IDEAL,
         "description"  => "My first iDEAL payment",
         "redirectUrl"  => "{$protocol}://{$hostname}{$path}/03-return-page.php?order_id={$order_id}",
+        "webhookUrl"   => "http://130.89.143.186/mollie_shot/src/mollie_examples/02-webhook-verification.php",
         "metadata"     => array(
             "order_id" => $order_id,
         ),

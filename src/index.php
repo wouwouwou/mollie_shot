@@ -6,6 +6,10 @@
  * Time: 09:03
  */
 
+/**
+ * Betaalpagina
+ */
+
 include "initialize.php";
 
 echo "Hello World!";

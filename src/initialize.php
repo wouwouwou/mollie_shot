@@ -6,6 +6,10 @@
  * Time: 15:35
  */
 
+/**
+ * Initializeren van Mollie Module d.m.v. composer
+ */
+
 require __DIR__ . '\..\vendor\autoload.php';
 
 /*

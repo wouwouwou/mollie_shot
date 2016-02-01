@@ -40,7 +40,8 @@ try
         "amount"       => 0.01,
         "description"  => "My first API payment",
         "redirectUrl"  => "{$protocol}://{$hostname}{$path}/03-return-page.php?order_id={$order_id}",
-        "webhookUrl"   => "{$protocol}://{$hostname}{$path}/02-webhook-verification.php",
+        //"webhookUrl"   => "{$protocol}://{$hostname}{$path}/02-webhook-verification.php",
+        "webhookUrl"   => "http://130.89.143.186/mollie_shot/src/mollie_examples/02-webhook-verification.php",
         "metadata"     => array(
             "order_id" => $order_id,
         ),
