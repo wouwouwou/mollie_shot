@@ -56,7 +56,7 @@ try
      *   issuer        The customer's bank. If empty the customer can select it later.
      */
     $payment = $mollie->payments->create(array(
-        "amount"       => 0.01,
+        "amount"       => 1.00,
         "method"       => Mollie_API_Object_Method::IDEAL,
         "description"  => "My first iDEAL payment",
         "redirectUrl"  => "{$protocol}://{$hostname}{$path}/03-return-page.php?order_id={$order_id}",
