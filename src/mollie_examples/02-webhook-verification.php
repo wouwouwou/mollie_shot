@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "initialize.php";
+    include "../initialize.php";
     /*
      * Check if this is a test request by Mollie
      */

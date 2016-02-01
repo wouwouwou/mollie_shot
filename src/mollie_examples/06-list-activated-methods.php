@@ -16,7 +16,8 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "initialize.php";
+    include "../initialize.php";
+
     /*
      * Get all the activated methods for this API key.
      */
@@ -26,6 +27,15 @@ try
         echo '<div style="line-height:40px; vertical-align:top">';
         echo '<img src="' . htmlspecialchars($method->image->normal) . '"> ';
         echo htmlspecialchars($method->description) . ' (' .  htmlspecialchars($method->id) . ')';
+        echo '</div>';
+    }
+
+    $issuers = $mollie->issuers->all();
+    foreach ($issuers as $issuer)
+    {
+        echo '<div style="line-height:40px; vertical-align:top">';
+        echo htmlspecialchars($issuer->method) . '<br />';
+        echo htmlspecialchars($issuer->id) . ' (' .  htmlspecialchars($issuer->name) . ')';
         echo '</div>';
     }
 }

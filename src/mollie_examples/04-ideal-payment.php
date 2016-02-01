@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "initialize.php";
+    include "../initialize.php";
     /*
      * First, let the customer pick the bank in a simple HTML form. This step is actually optional.
      */

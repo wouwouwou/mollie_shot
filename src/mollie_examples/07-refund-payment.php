@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "initialize.php";
+    include "../initialize.php";
     /*
      * Retrieve the payment you want to refund from the API.
      */
