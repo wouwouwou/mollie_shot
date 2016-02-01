@@ -21,3 +21,8 @@ $mollie = new Mollie_API_Client;
 
 $mollie->setApiKey("test_knXSwBN55uqRwLNHeGH2nHGsYZDi7d");
 //$mollie->setApiKey("live_XJdLA2wPvTFXzU67hxXrTVibTtn3tj");
+
+$servername = "localhost";
+$username = "shot";
+$password = "ronny";
+$dbname = "shot_betaalmodule";

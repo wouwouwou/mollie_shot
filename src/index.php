@@ -17,14 +17,14 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "initialize.php";
+    require "initialize.php";
 
     /*
      * First, let the customer fill in the order
      */
     if ($_SERVER["REQUEST_METHOD"] != "POST")
     {
-        echo '<form method="post">Hier komt een formulier! <button>OK</button></form>';
+        require "formulier.php";
         exit;
     }
 
@@ -33,15 +33,19 @@ try
      * in the redirectUrl (below) so a proper return page can be shown to the customer.
      */
     $order_id = time();
+
     /*
      * Determine the url parts to these example files.
      */
     $protocol = isset($_SERVER['HTTPS']) && strcasecmp('off', $_SERVER['HTTPS']) !== 0 ? "https" : "http";
     $hostname = $_SERVER['HTTP_HOST'];
     $path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
+
+    $price = floatval($_POST["aantal"]) * 10.00;
+
     /*
      * Payment parameters:
-     *   amount        Amount in EUROs. This example creates a € 0.01 payment.
+     *   amount        Amount in EUROs.
      *   method        Payment method "ideal".
      *   description   Description of the payment.
      *   redirectUrl   Redirect location. The customer will be redirected there after the payment.
@@ -49,11 +53,14 @@ try
      *   issuer        The customer's bank. If empty the customer can select it later.
      */
     $payment = $mollie->payments->create(array(
-        "amount"       => $_POST["price"],
+        "amount"       => $price,
+        //"amount"       => 1.00,
         "method"       => Mollie_API_Object_Method::IDEAL,
         "description"  => "SHOT-SOLO concert " . $order_id,
-        "redirectUrl"  => "{$protocol}://{$hostname}{$path}/return.php?order_id={$order_id}",
-        "webhookUrl"   => "http://130.89.143.186/mollie_shot/src/mollie_examples/webhook.php",
+        "redirectUrl"  => "http://localhost/mollie_shot/src/return.php?order_id={$order_id}",
+        //"redirectUrl"  => "{$protocol}://{$hostname}{$path}/return.php?order_id={$order_id}",
+        "webhookUrl"   => "http://130.89.143.186/mollie_shot/src/webhook.php",
+        //"webhookUrl"   => "{$protocol}://{$hostname}{$path}/webhook.php",
         "metadata"     => array(
             "order_id" => $order_id,
         ),
@@ -76,13 +83,34 @@ catch (Mollie_API_Exception $e)
  */
 function database_write ($firstname, $lastname, $e_mail, $order_id, $status, $price)
 {
+    global $servername, $username, $password, $dbname;
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $order_id = intval($order_id);
-    $database = dirname(__FILE__) . "/orders/order-{$order_id}.txt";
-    file_put_contents($database, $status);
+    $sql = "INSERT INTO orders (firstname, lastname, email, order_id, status, price)
+            VALUES ('$firstname', '$lastname', '$e_mail', $order_id, '$status', $price)";
+    echo $sql;
+    $result = $conn->query($sql);
+
+    if ($result == false) {
+        echo "Error when writing to database. Please try again.";
+        exit;
+    }
+
+    $conn->close();
 }
-/*
- * database inloggegevens
- * gebruikersnaam: shot
- * ww: ronny
- */
+
+$db->connect();
+
+$sql = "SELECT * FROM orders";
+$result = $db->conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$db->conn->close();
