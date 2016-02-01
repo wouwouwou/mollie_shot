@@ -13,20 +13,20 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelling voltooid!</h2>
+        <h2>Toegangskaarten SHOT-SOLO Concert</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
             <h3>Uw bestelling is voltooid!</h3>
             <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens inclusief uw referentiecode. <br>
-            Met deze gegevens kunt u uw toegangskaart(en) bij aankomst ophalen.</h5>
+                Met deze gegevens kunt u uw toegangskaart(en) bij aankomst ophalen.</h5>
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 400px;"class="img-responsive img-rounded">
+                 style="width: 400px;" class="img-responsive img-rounded">
             <img src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21"
-                 alt="SOLO Logo" style="width: 400px;"class="img-responsive img-rounded">
+                 alt="SOLO Logo" style="width: 400px;" class="img-responsive img-rounded">
         </div>
     </div>
 </div>
