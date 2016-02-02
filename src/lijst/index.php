@@ -7,5 +7,6 @@
  */
 
 /**
- * Inlogpagina voor back-end
+ * Weergeeft de database
  */
+
