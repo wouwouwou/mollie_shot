@@ -8,6 +8,7 @@
 
 /**
  * Initializeren van Mollie Module d.m.v. composer
+ * Initialize DB connection
  */
 
 require __DIR__ . '\..\vendor\autoload.php';
@@ -19,10 +20,15 @@ require __DIR__ . '\..\vendor\autoload.php';
  */
 $mollie = new Mollie_API_Client;
 
+// Select the test-api key or the live-api key
 $mollie->setApiKey("test_knXSwBN55uqRwLNHeGH2nHGsYZDi7d");
 //$mollie->setApiKey("live_XJdLA2wPvTFXzU67hxXrTVibTtn3tj");
 
+//DB settings
 $servername = "localhost";
 $username = "shot";
 $password = "ronny";
 $dbname = "shot_betaalmodule";
+
+//Temporary IP
+$ip = "130.89.141.209";

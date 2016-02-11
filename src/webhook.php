@@ -18,6 +18,7 @@ try
      * See: https://www.mollie.com/beheer/account/profielen/
      */
     require "initialize.php";
+
     /*
      * Check if this is a test request by Mollie
      */
@@ -25,15 +26,16 @@ try
     {
         die('OK');
     }
+
     /*
      * Retrieve the payment's current state.
      */
     $payment  = $mollie->payments->get($_POST["id"]);
-    $order_id = $payment->metadata->order_id;
+
     /*
      * Update the order in the database.
      */
-    database_write($order_id, $payment->status);
+    database_write($payment->id, $payment->status, $payment->metadata->time);
 }
 catch (Mollie_API_Exception $e)
 {
@@ -42,13 +44,20 @@ catch (Mollie_API_Exception $e)
 /*
  * NOTE: This example uses a text file as a database. Please use a real database like MySQL in production code.
  */
-function database_write ($order_id, $status)
+function database_write ($payment_id, $status, $time)
 {
     global $servername, $username, $password, $dbname;
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql = "UPDATE orders SET status='$status' WHERE order_id=$order_id";
-    $result = $conn->query($sql);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = $conn->prepare("UPDATE orders SET status=? WHERE payment_id=? AND unix_time=?");
+
+    $sql->bind_param("sss", $status, $payment_id, $time);
+
+    $result = $sql->execute();
 
     if ($result == false) {
         echo "Error when writing to database. Please try again.";

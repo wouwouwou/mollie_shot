@@ -15,34 +15,30 @@
 
 require "initialize.php";
 
-$order_id = $_GET["order_id"];
-
-/*
- * NOTE: This example uses a text file as a database. Please use a real database like MySQL in production code.
- */
+$time = $_GET["int"];
 
 global $servername, $username, $password, $dbname;
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = "SELECT * FROM orders WHERE order_id=$order_id AND status='paid'";
-$result = $conn->query($sql);
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, price FROM orders WHERE unix_time=? AND status=?");
 
-if ($result->num_rows == 0) {
+$req_status = "paid";
+$sql->bind_param("ss", $time, $req_status);
+
+$sql->execute();
+$sql->store_result();
+
+if ($sql->num_rows == 0) {
     echo "Error, 0 reports!";
     exit;
-} else if ($result->num_rows > 1) {
+} else if ($sql->num_rows > 1) {
     echo "Error, more than 1 result!";
     exit;
 } else {
-    $row = $result->fetch_row();
-    $voornaam = $row[0];
-    $achternaam = $row[1];
-    $email = $row[2];
-    $price = $row[5];
+    $sql->bind_result($id, $voornaam, $achternaam, $email, $price);
+    $sql->fetch();
     $aantal = intval($price) / 10;
 }
-
-$conn->close();
 
 $to = $email;
 $subject = "[SHOT] Toegangskaarten";
@@ -76,7 +72,7 @@ $message = "
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
                 <p style='font-weight: bold;'>Aantal kaarten:<br> {$aantal}</p>
-                <p style='font-weight: bold;'>Referentiecode:<br> {$order_id}</p>
+                <p style='font-weight: bold;'>Referentiecode:<br> {$id}</p>
                 <img src='http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg' alt='SHOT Logo'
                  style='width: 400px;' class='img-responsive img-rounded'><br>
                 <img src='https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21'
@@ -95,6 +91,8 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-$headers .= "From: <kaartverkoop@shot.utwente.nl>" . "\r\n";
+$headers .= "From: SHOT <kaartverkoop@shot.utwente.nl>" . "\r\n";
 
 mail($to,$subject,$message,$headers);
+
+$conn->close();
