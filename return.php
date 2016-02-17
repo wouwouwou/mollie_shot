@@ -20,7 +20,9 @@
         <div class="col-md-8">
             <h3>Uw bestelling is voltooid!</h3>
             <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens inclusief uw referentiecode. <br>
-                Met deze gegevens kunt u uw toegangskaart(en) bij aankomst ophalen.</h5>
+                Met deze gegevens kunnen wij sneller uw toegangskaarten verstrekken bij aankomst van het concert.<br>
+				Indien u binnen enkele minuten de e-mail niet heeft ontvangen, of heeft u een andere vraag, neem <br>
+				dan contact met ons op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op <a href='../'>www.shot.utwente.nl</a></h5>
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"

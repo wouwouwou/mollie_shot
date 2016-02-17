@@ -19,7 +19,7 @@
         <div class="col-md-8">
             <h3>Welkom op de bestelwebsite voor het SHOT-SOLO Concert! </h3>
             <h5>U kunt hier toeganskaarten bestellen voor het concert wat plaatsvindt op 10 april
-            om 15:30 uur. De toegangskaarten zijn &euro;10,00 per stuk en kunnen hier al&eacute;&eacute;n worden afgerekend
+            om 15:30 uur. De toegangskaarten zijn &euro;10,00 per stuk en kunnen hier all&eacute;&eacute;n worden afgerekend
             door middel van iDeal. Als u eenmaal de kaarten heeft besteld kunt u deze bij aankomst ophalen.<br><br></h5>
             <h4>Vul hier uw gegevens in:</h4>
         </div>
@@ -32,23 +32,29 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
-            <form class="form-horizontal" role="form" method="post" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
+            <form class="form-horizontal" role="form" method="post" onsubmit="return confirmEmail()" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="firstname">Voornaam:</label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="firstname">
+                        <input class="form-control" type="text" name="firstname" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="lastname">Achternaam:</label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="lastname">
+                        <input class="form-control" type="text" name="lastname" required>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="e-mail">E-mail:</label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="e-mail">
+                        <input class="form-control" type="text" name="e-mail" id="email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                    </div>
+                </div>
+				<div class="form-group">
+                    <label class="control-label col-sm-4" for="e-mail2">E-mail ter controle:</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" name="e-mail2" id="email2" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}" onblur="confirmEmail2()"> <div id="error" style="color: red;"></div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -79,6 +85,27 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    function confirmEmail() {
+        var email = document.getElementById("email").value
+        var email2 = document.getElementById("email2").value
+        if(email != email2) {
+            alert('De ingevoerde e-mail adressen zijn niet gelijk aan elkaar!');
+			return false;
+        }
+    }
+	function confirmEmail2() {
+        var email = document.getElementById("email").value
+        var email2 = document.getElementById("email2").value
+        if(email != email2) {
+            document.getElementById('error').innerHTML="Dit e-mail adres is niet hetzelfde!";
+        }
+		if(email == email2) {
+			document.getElementById('error').innerHTML="";
+		}
+    }
+</script>
 
 </body>
 </html>

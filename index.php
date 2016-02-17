@@ -24,10 +24,11 @@ try
 
     /*
      * Determine the url parts to these example files.
-     */
+     
     $protocol = isset($_SERVER['HTTPS']) && strcasecmp('off', $_SERVER['HTTPS']) !== 0 ? "https" : "http";
     $hostname = $_SERVER['HTTP_HOST'];
     $path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
+	*/
 
     $price = floatval($_POST["aantal"]) * 10.00;
 
@@ -44,13 +45,12 @@ try
      */
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
-        //"amount"       => 1.00,
         "method"       => Mollie_API_Object_Method::IDEAL,
         "description"  => "SHOT-SOLO concert " . $time,
-        "redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
-        //"redirectUrl"  => "{$protocol}://{$hostname}{$path}/return.php",
-        "webhookUrl"   => "http://{$ip}/mollie_shot/src/webhook.php",
-        //"webhookUrl"   => "{$protocol}://{$hostname}{$path}/webhook.php",
+        //"redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
+        "redirectUrl"  => "http://www.shot.utwente.nl/kaartverkoop/return.php?int={$time}",
+        //"webhookUrl"   => "http://{$ip}/mollie_shot/src/webhook.php",
+        "webhookUrl"   => "http://www.shot.utwente.nl/kaartverkoop/webhook.php",
         "metadata"     => array(
             "time" => $time,
         ),
@@ -64,6 +64,7 @@ try
     /*
      * Send the customer off to complete the payment.
      */
+	//header("Location: http://shot.utwente.nl/kaartverkoop/return.php");
     header("Location: " . $payment->getPaymentUrl());
 }
 catch (Mollie_API_Exception $e)
