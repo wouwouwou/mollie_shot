@@ -36,7 +36,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="firstname">Voornaam:</label>
                     <div class="col-sm-4">
-                        <input class="form-control" type="text" name="firstname" required>
+                            <input class="form-control" type="text" name="firstname" required>
                     </div>
                 </div>
                 <div class="form-group">

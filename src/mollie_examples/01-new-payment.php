@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "../initialize.php";
+    include "../../initialize.php";
     /*
      * Generate a unique order id for this example. It is important to include this unique attribute
      * in the redirectUrl (below) so a proper return page can be shown to the customer.

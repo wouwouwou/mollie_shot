@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "../initialize.php";
+    include "../../initialize.php";
 
     /*
      * Get all the activated methods for this API key.

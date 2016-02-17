@@ -16,7 +16,7 @@ try
      *
      * See: https://www.mollie.com/beheer/account/profielen/
      */
-    include "../initialize.php";
+    include "../../initialize.php";
     // Pagination
     $offset = 0;
     $limit  = 25;
