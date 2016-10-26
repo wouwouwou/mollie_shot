@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lustrumconcert | Kaartverkoop</title>
+    <title>Muzikale Roadtrip SHOT - QHarmony - De Ontzetting | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -12,12 +12,12 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelformulier Toegangskaarten Lustrumconcert</h2>
+        <h2>Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
-            <h3>Welkom op de bestelwebsite voor het lustrumconcert van SHOT! </h3>
+            <h3>Welkom op de bestelwebsite voor de Muzikale Roadtrip van SHOT, QHarmony en De Ontzetting! </h3>
             <h5>Helaas kunt u online geen toegangskaarten meer bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op 10 april
 				om 15:30 uur in het Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar &euro;10,00 per stuk.
 			</h5>
