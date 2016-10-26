@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SHOT-SOLO Concert | Kaartverkoop</title>
+    <title>Lustrumconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -12,16 +12,29 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelformulier Toegangskaarten SHOT-SOLO Concert</h2>
+        <h2>Bestelformulier Toegangskaarten Lustrumconcert</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
-            <h3>Welkom op de bestelwebsite voor het SHOT-SOLO Concert! </h3>
-            <h5>U kunt hier toeganskaarten bestellen voor het concert wat plaatsvindt op 10 april
-            om 15:30 uur. De toegangskaarten zijn &euro;10,00 per stuk en kunnen hier all&eacute;&eacute;n worden afgerekend
-            door middel van iDeal. Als u eenmaal de kaarten heeft besteld kunt u deze bij aankomst ophalen.<br><br></h5>
+            <h3>Welkom op de bestelwebsite voor het lustrumconcert van SHOT! </h3>
+            <h5>Helaas kunt u online geen toegangskaarten meer bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op 10 april
+				om 15:30 uur in het Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar &euro;10,00 per stuk.
+			</h5>
+			<!--
+			<h5>U kunt hier toegangskaarten bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op 10 april
+                om 15:30 uur in het Muziekcentrum te Enschede. Toegangskaarten kosten &euro;10,00 per stuk en kunnen betaald worden met behulp van iDeal.
+                De kaarten die u besteld heeft kunt u voorafgaand aan het concert ophalen bij de ingang van het Muziekcentrum.<br><br>
+                Komt u van ver maar wilt u dit mooie concert niet missen? SHOT biedt de mogelijkheid een NS retour ticket aan te schaffen.
+                Hiermee kunt u van een willekeurig station opstappen richting Enschede. Vanaf station Enschede centraal is het minder dan 5
+                minuten lopen naar het Wilmink Theater. Dit ticket kost &euro;7,50. Als u hier gebruik van wilt maken kunt u een mail met het aantal
+                gewenste NS tickets sturen naar: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a>, dan krijgt u hierop
+                een bevestigingsmail met verdere betalingsinstructies en een instructie om uw ticket te downloaden.<br><br>
+                Voor vragen ten aanzien van de bestelprocedure van toegangskaarten voor het lustrumconcert van SHOT en het SHOT oud-leden orkest kunt u
+                contact opnemen met: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>
+            </h5>
             <h4>Vul hier uw gegevens in:</h4>
+			-->
         </div>
 
         <div class="col-md-3">
@@ -32,6 +45,7 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
+			<!--
             <form class="form-horizontal" role="form" method="post" onsubmit="return confirmEmail()" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="firstname">Voornaam:</label>
@@ -78,6 +92,7 @@
                     <button type="submit" class="btn btn-default">Bestellen en betalen via iDeal</button>
                 </div>
             </form>
+			-->
         </div>
         <div class="col-md-3">
             <img src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21"

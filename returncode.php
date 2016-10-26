@@ -48,7 +48,7 @@ $message = "
 <head>
 <title>[SHOT] Toegangskaarten</title>
 <meta charset='UTF-8'>
-    <title>SHOT-SOLO Concert | Kaartverkoop</title>
+    <title>Lustrumconcert | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
@@ -58,14 +58,14 @@ $message = "
 
 <div class='container'>
     <div class='jumbotron'>
-        <h2>Toegangskaarten SHOT-SOLO Concert</h2>
+        <h2>Toegangskaarten Lustrumconcert</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>Bij deze de e-mail ter bevestiging van uw gegevens. Hier vindt u ook de referentiecode waarmee<br>
-            wij u snel de toegangskaarten kunnen verstrekken wanneer u aankomt bij het concert. Indien u vragen<br>
+            <h5>Hierbij ontvangt u de e-mail ter bevestiging van uw bestelling. In deze e-mail vindt u ook de referentiecode waarmee<br>
+            u de toegangskaarten kan afhalen voor aanvang van het concert. Indien u vragen<br>
              heeft kunt u mailen naar <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a></h5><br>
             <div class='col-sm-2'>
                 <p style='font-weight: bold;'>Voornaam:<br> {$voornaam}</p>

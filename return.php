@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SHOT-SOLO Concert | Kaartverkoop</title>
+    <title>Lustrumconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -13,16 +13,16 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Toegangskaarten SHOT-SOLO Concert</h2>
+        <h2>Toegangskaarten Lustrumconcert</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens inclusief uw referentiecode. <br>
-                Met deze gegevens kunnen wij sneller uw toegangskaarten verstrekken bij aankomst van het concert.<br>
-				Indien u binnen enkele minuten de e-mail niet heeft ontvangen, of heeft u een andere vraag, neem <br>
-				dan contact met ons op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op <a href='../'>www.shot.utwente.nl</a></h5>
+            <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens en uw referentiecode. <br>
+                Met uw referentiecode kunt u voor aanvang van het concert de toegnangskaarten afhalen.<br>
+				Indien u binnen enkele minuten geen e-mail ontvangen heeft, of heeft u een andere vraag, neem <br>
+				dan contact met ons op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op <a href='../' target="_blank">www.shot.utwente.nl</a></h5>
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"

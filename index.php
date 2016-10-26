@@ -46,7 +46,7 @@ try
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
         "method"       => Mollie_API_Object_Method::IDEAL,
-        "description"  => "SHOT-SOLO concert " . $time,
+        "description"  => "Lustrumconcert " . $time,
         //"redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
         "redirectUrl"  => "http://www.shot.utwente.nl/kaartverkoop/return.php?int={$time}",
         //"webhookUrl"   => "http://{$ip}/mollie_shot/src/webhook.php",
