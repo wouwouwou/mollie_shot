@@ -28,7 +28,7 @@
                 om 14:30 uur in het Theater Junushoff te Wageningen. Toegangskaarten kosten &euro;7,50 per stuk en kunnen betaald worden met behulp van iDeal.
                 De kaarten die u besteld heeft kunt u voorafgaand aan het concert ophalen bij de ingang van het theater.<br><br>
                 Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS Groepsretour ticket aan te schaffen.
-                Hiermee kunt u van een willekeurig station opstappen richting station Ede-Wageningen. Vanaf station Ede-Wageningen kunt u de bus nemen richting Wageningen, busstation
+                Hiermee kunt u van een willekeurig station opstappen richting station Ede-Wageningen. Vanaf station Ede-Wageningen kunt u de bus nemen richting Wageningen, busstation.
                 Vanaf dit busstation is het minder dan 10 minuten lopen naar Theater Junushoff. Dit ticket kost &euro;8,00. Als u hier gebruik van wilt maken kunt u een mail met het aantal
                 gewenste NS tickets sturen naar: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a>, dan krijgt u hierop
                 een bevestigingsmail met verdere betalingsinstructies en een instructie om uw ticket te downloaden.<br><br>
@@ -37,21 +37,22 @@
             </h5>
             <h4>Vul hier uw gegevens in:</h4>
         </div>
-
+    </div>
+    <div class="row">
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 400px;"class="img-responsive img-rounded">
+                 style="width: 200px;"class="img-responsive img-rounded">
         </div>
         <div class="col-md-3">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
-                 style="width: 400px;"class="img-responsive img-rounded">
+                 style="width: 200px;"class="img-responsive img-rounded">
         </div>
         <div class="col-md-3">
             <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
-                 style="width: 400px;"class="img-responsive img-rounded">
+                 style="width: 200px;"class="img-responsive img-rounded">
         </div>
-
     </div>
+
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
