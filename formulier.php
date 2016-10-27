@@ -13,13 +13,9 @@
 <div class="container">
     <div class="jumbotron">
 
-        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten <br>
+        <h2 style="font-family: 'Times New Roman', Georgia, serif;">Bestelformulier Toegangskaarten <br>
             Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
-
-
-
-
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
@@ -43,15 +39,15 @@
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
+                 style="width: 200px;" class="img-responsive img-rounded">
         </div>
         <div class="col-md-3">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
+                 style="width: 200px;" class="img-responsive img-rounded">
         </div>
         <div class="col-md-3">
             <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
+                 style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
 
@@ -59,7 +55,6 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
-
             <div class="col-md-4">
             <form class="form-horizontal" role="form" method="post" onsubmit="return confirmEmail()" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <div class="form-group">
@@ -89,7 +84,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-sm-4" for="aantal">Aantal toegangskaarten:</label>
+                    <label class="control-label col-sm-4" for="aantal_concert">Aantal toegangskaarten:</label>
                     <div class="col-sm-2">
                         <select class="form-control" name="aantal_concert">
                             <option value="1">1</option>
@@ -106,7 +101,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                <label class="control-label col-sm-4" for="aantal">Aantal NS Groepsretour tickets:</label>
+                <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
                 <div class="col-sm-2">
                     <select class="form-control" name="aantal_ns">
                         <option value="1">1</option>
