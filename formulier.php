@@ -128,16 +128,16 @@
 
 <script type="text/javascript">
     function confirmEmail() {
-        var email = document.getElementById("email").value
-        var email2 = document.getElementById("email2").value
+        var email = document.getElementById("email").value;
+        var email2 = document.getElementById("email2").value;
         if(email != email2) {
             alert('De ingevoerde e-mail adressen zijn niet gelijk aan elkaar!');
 			return false;
         }
     }
 	function confirmEmail2() {
-        var email = document.getElementById("email").value
-        var email2 = document.getElementById("email2").value
+        var email = document.getElementById("email").value;
+        var email2 = document.getElementById("email2").value;
         if(email != email2) {
             document.getElementById('error').innerHTML="Dit e-mail adres is niet hetzelfde!";
         }

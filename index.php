@@ -30,7 +30,9 @@ try
     $path     = dirname(isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : $_SERVER['PHP_SELF']);
 	*/
 
-    $price = floatval($_POST["aantal_concert"]) * 7.50 + floatval($_POST["aantal_ns"] * 8.00);
+    $tickets_concert = intval($_POST["aantal_concert"]);
+    $tickets_ns = intval($_POST["aantal_ns"]);
+    $price = floatval($tickets_concert) * 7.50 + floatval($tickets_ns) * 8.00;
 
     $time = microtime(true);
 
@@ -59,7 +61,15 @@ try
     /*
      * In this example we store the order with its payment status in a database.
      */
-    $order_id = database_write($payment->id, $_POST["firstname"], $_POST["lastname"], $_POST["e-mail"], $time, $payment->status, $payment->amount);
+    database_write( $payment->id,
+                    $_POST["firstname"],
+                    $_POST["lastname"],
+                    $_POST["e-mail"],
+                    $time,
+                    $payment->status,
+                    $tickets_concert,
+                    $tickets_ns,
+                    $payment->amount);
 
     /*
      * Send the customer off to complete the payment.
@@ -75,7 +85,7 @@ catch (Mollie_API_Exception $e)
 /*
  * Writes to the database with prepared statement
  */
-function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $price)
+function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_ns, $price)
 {
     global $servername, $username, $password, $dbname;
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -84,10 +94,10 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = $conn->prepare("INSERT INTO orders (payment_id, firstname, lastname, email, unix_time, status, price)
-            VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $sql = $conn->prepare("INSERT INTO orders (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_ns, total_price)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $sql->bind_param("sssssss",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $price);
+    $sql->bind_param("ssssisiid",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_ns, $price);
 
     $result = $sql->execute();
 
@@ -96,9 +106,5 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
         exit;
     }
 
-    $order_id = $conn->insert_id;
-
     $conn->close();
-
-    return $order_id;
 }
