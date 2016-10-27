@@ -12,8 +12,11 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelformulier Toegangskaarten
-            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
+        p {
+        font-family: "Times New Roman", Georgia, Serif;
+        }
+        <p class="serif"></p><h2>Bestelformulier Toegangskaarten
+            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2></p>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -26,9 +29,9 @@
 			<h5>U kunt hier toegangskaarten bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op zondag 4 december
                 om 14:30 uur in het Muziekcentrum te Enschede. Toegangskaarten kosten &euro;10,00 per stuk en kunnen betaald worden met behulp van iDeal.
                 De kaarten die u besteld heeft kunt u voorafgaand aan het concert ophalen bij de ingang van het Muziekcentrum.<br><br>
-                Komt u van ver maar wilt u dit mooie concert niet missen? SHOT biedt de mogelijkheid een NS retour ticket aan te schaffen.
+                Komt u van ver maar wilt u dit mooie concert niet missen? SHOT biedt de mogelijkheid een NS Groepsretour ticket aan te schaffen.
                 Hiermee kunt u van een willekeurig station opstappen richting Enschede. Vanaf station Enschede centraal is het minder dan 5
-                minuten lopen naar het Wilmink Theater. Dit ticket kost &euro;7,50. Als u hier gebruik van wilt maken kunt u een mail met het aantal
+                minuten lopen naar het Wilmink Theater. Dit ticket kost &euro;8,00. Als u hier gebruik van wilt maken kunt u een mail met het aantal
                 gewenste NS tickets sturen naar: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a>, dan krijgt u hierop
                 een bevestigingsmail met verdere betalingsinstructies en een instructie om uw ticket te downloaden.<br><br>
                 Voor vragen ten aanzien van de bestelprocedure van toegangskaarten voor het lustrumconcert van SHOT en het SHOT oud-leden orkest kunt u
@@ -73,7 +76,7 @@
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="aantal">Aantal toegangskaarten:</label>
                     <div class="col-sm-2">
-                        <select class="form-control" name="aantal">
+                        <select class="form-control" name="aantal_concert">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -90,7 +93,7 @@
                 <div class="form-group">
                 <label class="control-label col-sm-4" for="aantal">Aantal NS Groepsretour tickets:</label>
                 <div class="col-sm-2">
-                    <select class="form-control" name="aantal">
+                    <select class="form-control" name="aantal_ns">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
