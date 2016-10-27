@@ -35,7 +35,7 @@ try
     /*
      * Update the order in the database.
      */
-    database_write($payment->id, $payment->status, $payment->metadata->time);
+    database_write($payment->id, $payment->status, intval($payment->metadata->time));
 }
 catch (Mollie_API_Exception $e)
 {
@@ -55,7 +55,7 @@ function database_write ($payment_id, $status, $time)
 
     $sql = $conn->prepare("UPDATE orders SET status=? WHERE payment_id=? AND unix_time=?");
 
-    $sql->bind_param("sss", $status, $payment_id, $time);
+    $sql->bind_param("ssi", $status, $payment_id, $time);
 
     $result = $sql->execute();
 
