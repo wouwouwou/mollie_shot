@@ -13,8 +13,8 @@
 <div class="container">
     <div class="jumbotron">
 
-        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten
-            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
+        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten</h2>
+        <h2    Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -32,7 +32,7 @@
                 Vanaf dit busstation is het minder dan 10 minuten lopen naar Theater Junushoff. Dit ticket kost &euro;8,00. Als u hier gebruik van wilt maken kunt u een mail met het aantal
                 gewenste NS tickets sturen naar: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a>, dan krijgt u hierop
                 een bevestigingsmail met verdere betalingsinstructies en een instructie om uw ticket te downloaden.<br><br>
-                Voor vragen ten aanzien van de bestelprocedure van toegangskaarten voor het lustrumconcert van SHOT en het SHOT oud-leden orkest kunt u
+                Voor vragen ten aanzien van de bestelprocedure van toegangskaarten voor het concert kunt u
                 contact opnemen met: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>
             </h5>
             <h4>Vul hier uw gegevens in:</h4>
