@@ -91,7 +91,7 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-$headers .= "From: SHOT <kaartverkoop@shot.utwente.nl>" . "\r\n";
+$headers .= "From: SHOT Kaartverkoop <kaartverkoop@shot.utwente.nl>" . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
