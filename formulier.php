@@ -16,21 +16,10 @@
         <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten <br>
             Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-3">
-            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-        <div class="col-md-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-        <div class="col-md-3">
-            <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-    </div>
+
+
+
+
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
@@ -51,6 +40,18 @@
                 contact opnemen met: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>
             </h5>
             <h4>Vul hier uw gegevens in:</h4>
+        </div>
+        <div class="col-md-3">
+            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
+        </div>
+        <div class="col-md-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
+        </div>
+        <div class="col-md-3">
+            <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
         </div>
     </div>
 
