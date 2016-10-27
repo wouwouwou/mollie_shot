@@ -12,7 +12,8 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting test</h2>
+        <h2>Bestelformulier Toegangskaarten
+            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -22,8 +23,8 @@
 				om 15:30 uur in het Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar &euro;10,00 per stuk.
 			</h5>
 			-->
-			<h5>U kunt hier toegangskaarten bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op 10 april
-                om 15:30 uur in het Muziekcentrum te Enschede. Toegangskaarten kosten &euro;10,00 per stuk en kunnen betaald worden met behulp van iDeal.
+			<h5>U kunt hier toegangskaarten bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest, dat plaatsvindt op zondag 4 december
+                om 14:30 uur in het Muziekcentrum te Enschede. Toegangskaarten kosten &euro;10,00 per stuk en kunnen betaald worden met behulp van iDeal.
                 De kaarten die u besteld heeft kunt u voorafgaand aan het concert ophalen bij de ingang van het Muziekcentrum.<br><br>
                 Komt u van ver maar wilt u dit mooie concert niet missen? SHOT biedt de mogelijkheid een NS retour ticket aan te schaffen.
                 Hiermee kunt u van een willekeurig station opstappen richting Enschede. Vanaf station Enschede centraal is het minder dan 5
@@ -86,6 +87,23 @@
                         </select>
                     </div>
                 </div>
+                <div class="form-group">
+                <label class="control-label col-sm-4" for="aantal">Aantal NS Groepsretour tickets:</label>
+                <div class="col-sm-2">
+                    <select class="form-control" name="aantal">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+        </div>
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-default">Bestellen en betalen via iDeal</button>
                 </div>
