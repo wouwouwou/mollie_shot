@@ -16,6 +16,7 @@
         <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class="row">
+        <div class="col-md-2"></div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
                  style="width: 200px;"class="img-responsive img-rounded">
@@ -120,14 +121,12 @@
                 </div>
 
         </div>
+                <div class="col-md-12"
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-default">Bestellen en betalen via iDeal</button>
                 </div>
+                </div>
             </form>
-        </div>
-        <div class="col-md-3">
-            <img src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xal1/v/t1.0-9/12524019_727132620719875_4573466835668056095_n.jpg?oh=bf34c1da84feaae697136192ded0b216&oe=57247F21"
-                 alt="SOLO Logo" style="width: 400px;"class="img-responsive img-rounded">
         </div>
     </div>
 </div>
