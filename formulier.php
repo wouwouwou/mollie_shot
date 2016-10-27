@@ -13,8 +13,21 @@
 <div class="container">
     <div class="jumbotron">
 
-        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten</h2>
-        <h2    Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
+        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
+        </div>
+        <div class="col-md-3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
+        </div>
+        <div class="col-md-3">
+            <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
+                 style="width: 200px;"class="img-responsive img-rounded">
+        </div>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -38,24 +51,13 @@
             <h4>Vul hier uw gegevens in:</h4>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-        <div class="col-md-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png" alt="QHarmony Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-        <div class="col-md-3">
-            <img src="https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg" alt="Ontzetting Logo"
-                 style="width: 200px;"class="img-responsive img-rounded">
-        </div>
-    </div>
+
 
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
+
+            <div class="col-md-4">
             <form class="form-horizontal" role="form" method="post" onsubmit="return confirmEmail()" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
                 <div class="form-group">
                     <label class="control-label col-sm-4" for="firstname">Voornaam:</label>
@@ -75,7 +77,9 @@
                         <input class="form-control" type="text" name="e-mail" id="email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                     </div>
                 </div>
-				<div class="form-group">
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
                     <label class="control-label col-sm-4" for="e-mail2">E-mail ter controle:</label>
                     <div class="col-sm-4">
                         <input class="form-control" type="text" name="e-mail2" id="email2" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}" onblur="confirmEmail2()"> <div id="error" style="color: red;"></div>
@@ -114,6 +118,7 @@
                         <option value="10">10</option>
                     </select>
                 </div>
+
         </div>
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-default">Bestellen en betalen via iDeal</button>
