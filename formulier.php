@@ -12,11 +12,8 @@
 
 <div class="container">
     <div class="jumbotron">
-        p {
-        font-family: "Times New Roman", Georgia, Serif;
-        }
-        <p class="serif"></p><h2>Bestelformulier Toegangskaarten
-            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2></p>
+        <h2 style="font-family: 'Times New Roman', Georgia, Serif;">Bestelformulier Toegangskaarten
+            Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
