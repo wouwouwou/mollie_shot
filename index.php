@@ -34,7 +34,7 @@ try
     $tickets_ns = intval($_POST["aantal_ns"]);
     $price = floatval($tickets_concert) * 7.50 + floatval($tickets_ns) * 8.00;
 
-    $time = microtime(true);
+    $time = time();
 
     /*
      * Payment parameters:
