@@ -12,7 +12,7 @@
 
 <div class="container">
     <div class="jumbotron">
-        <h2>Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting</h2>
+        <h2>Bestelformulier Toegangskaarten Muzikale Roadtrip SHOT - QHarmony - De Ontzetting. dit is een test</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
