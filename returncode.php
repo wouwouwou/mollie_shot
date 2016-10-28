@@ -63,7 +63,7 @@ $message = "
         <div class='col-md-1'></div>
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>Hierbij ontvangt u de e-mail ter bevestiging van uw bestelling. U kunt uw toegangskaart(en) afhalen voor aanvang<br>
+            <h5>Hierbij ontvangt u de e-mail ter bevestiging van uw bestelling. U kunt uw toegangskaarten afhalen voor aanvang<br>
             van het concert en staan op uw naam. Indien u vragen heeft kunt u mailen naar <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>
             <br><br>
             Uw bestelgegevens:</h5><br>
@@ -73,8 +73,12 @@ $message = "
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
                 <p style='font-weight: bold;'>Aantal toeganskaarten:<br> {$tickets_concert}</p>
                 <p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>
-                <img src='http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg' alt='SHOT Logo'
-                 style='width: 400px;' class='img-responsive img-rounded'><br>
+                <img src=\"http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg\" alt=\"SHOT Logo\"
+                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
+            <img src=\"https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png\" alt=\"QHarmony Logo\"
+                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
+            <img src=\"https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg\" alt=\"Ontzetting Logo\"
+                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>
     </div>

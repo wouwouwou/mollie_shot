@@ -36,6 +36,18 @@ try
 
     $time = time();
 
+    $method = $_POST["method"];
+    switch ($method) {
+        case "sofort":
+            $method = Mollie_API_Object_Method::SOFORT;
+            break;
+        case "mistercash":
+            $method = Mollie_API_Object_Method::MISTERCASH;
+            break;
+        default:
+            $method = Mollie_API_Object_Method::IDEAL;
+    }
+
     /*
      * Payment parameters:
      *   amount        Amount in EUROs.
@@ -47,7 +59,7 @@ try
      */
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
-        "method"       => Mollie_API_Object_Method::IDEAL,
+        "method"       => $method,
         "description"  => "Muzikale Roadtrip " . $time,
         //"redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
         "redirectUrl"  => "http://www.shot.utwente.nl/kaartverkoop/return.php?int={$time}",
