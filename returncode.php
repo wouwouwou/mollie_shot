@@ -56,17 +56,21 @@ $message = "
 <body>
 
 <div class='container'>
-    <div class='jumbotron'>
-        <h2>Toegangskaarten Muzikale Roadtrip</h2>
+    <div class='page-header'>
+        <h2>Toegangskaarten Muzikale Roadtrip<br>
+            SHOT - QHarmony - De Ontzetting</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>Hierbij ontvangt u de e-mail ter bevestiging van uw bestelling. U kunt uw toegangskaarten afhalen voor aanvang<br>
-            van het concert en staan op uw naam. Indien u vragen heeft kunt u mailen naar <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>
-            <br><br>
-            Uw bestelgegevens:</h5><br>
+            <h5>Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
+                in de Junushoff afhalen en staan op uw naam. De NS Groupretours worden op een later moment verwerkt en
+                uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
+				Indien u binnen enkele minuten geen e-mail ontvangen heeft, of heeft u een andere vraag, neem dan contact met ons
+                op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op <a href='http://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a></h5>
+            <br>
+            Uw bestelgegevens:</h5>
             <div class='col-sm-2'>
                 <p style='font-weight: bold;'>Voornaam:<br> {$voornaam}</p>
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
