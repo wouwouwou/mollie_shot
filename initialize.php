@@ -21,8 +21,8 @@ require __DIR__ . '/vendor/autoload.php';
 $mollie = new Mollie_API_Client;
 
 // Select the test-api key or the live-api key
-//$mollie->setApiKey("test_knXSwBN55uqRwLNHeGH2nHGsYZDi7d");
-$mollie->setApiKey("live_XJdLA2wPvTFXzU67hxXrTVibTtn3tj");
+$mollie->setApiKey("test_knXSwBN55uqRwLNHeGH2nHGsYZDi7d");
+//$mollie->setApiKey("live_XJdLA2wPvTFXzU67hxXrTVibTtn3tj");
 
 //DB settings
 $servername = "localhost";

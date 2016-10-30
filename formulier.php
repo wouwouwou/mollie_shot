@@ -69,13 +69,13 @@
 			-->
 			<h5>U kunt hier toegangskaarten bestellen voor het samenwerkingsconcert van het Studenten Harmonie Orkest Twente, QHarmony en De Ontzetting,
                 dat plaatsvindt op zondag 4 december om 14:30 uur in de Junushoff te Wageningen. Toegangskaarten kosten &euro;7,50 per stuk en kunnen online
-                worden betaald. De kaarten die u besteld heeft kunt u voorafgaand aan het concert ophalen bij de ingang van het theater.
+                worden betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang van het theater.
                 <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS Groepsretour ticket aan te schaffen.
                 Hiermee kunt u van een willekeurig station opstappen richting station Ede-Wageningen. Vanaf station Ede-Wageningen kunt u de bus
                 (lijn 84 of 88) nemen richting Wageningen (let op: dit zit niet inbegrepen in het NS Groepsretour!). Vanaf het busstation te Wageningen
                 is het minder dan 10 minuten lopen naar de Junushoff. Dit ticket kost &euro;8,00 en is verkrijgbaar t/m 26 november 2016.
                 Ook het NS Groepsretour kan online worden betaald.
-                <br><br>Voor vragen ten aanzien van de bestelprocedure van toegangskaarten voor het concert kunt u
+                <br><br>Voor vragen naar aanleiding van de bestelprocedure van toegangskaarten voor het concert en de NS Groupsretours kunt u
                 contact opnemen met: <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>
             </h5>
             <h4>Vul hier uw gegevens in:</h4>
