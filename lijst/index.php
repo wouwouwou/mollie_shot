@@ -29,10 +29,12 @@ require "../initialize.php";
 global $servername, $username, $password, $dbname;
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_ns, total_price FROM orders");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_ns, total_price FROM orders GROUP BY unix_time");
 
 $sql->execute();
 $sql->store_result();
+
+$total = 0;
 
 if ($sql->num_rows == 0) {
     echo "Er zijn nog geen bestellingen. :( <br><br>";
@@ -40,7 +42,11 @@ if ($sql->num_rows == 0) {
 } else {
     $sql->bind_result($id, $voornaam, $achternaam, $email, $time, $status, $tickets_concert, $tickets_ns, $price);
     while($sql->fetch()) {
+        if ($status == "paid") {
+            $total += $tickets_concert;
+        }
         $price = number_format($price, 2);
+        $time = gmdate("d-m-Y H:i:s", $time);
         echo "
         <tr>
             <td>{$id}</td>
@@ -57,6 +63,6 @@ if ($sql->num_rows == 0) {
     }
 }
 
-echo "</td></table>";
-
+echo "</td></table><br />";
+echo "{$total}";
 $conn->close();

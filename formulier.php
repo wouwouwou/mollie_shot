@@ -62,12 +62,12 @@
         <div class="col-md-1"></div>
         <div class="col-md-8">
             <h3>Welkom op de bestelwebsite voor de Muzikale Roadtrip van SHOT, QHarmony en De Ontzetting! </h3>
-            <!--<h5>Helaas kunt u online geen toegangskaarten meer bestellen voor het lustrumconcert van SHOT en het SHOT oud-leden orkest,
-            dat plaatsvindt op 10 april om 15:30 uur in het Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
-            Toegangskaarten kosten daar &euro;10,00 per stuk.
-			</h5>
-			-->
-			<h5>U kunt hier toegangskaarten bestellen voor het samenwerkingsconcert van het Studenten Harmonie Orkest Twente, QHarmony en De Ontzetting,
+            <h5>Helaas kunt u online geen toegangskaarten meer bestellen voor de Muzikale Roadtrip van SHOT, QHarmony en De Ontzetting,
+            dat plaatsvindt op 4 december 2016 om 14:30 uur in De Junushoff te Wageningen. Kaarten zijn nog wel beschikbaar aan de deur.
+            Toegangskaarten kosten daar &euro;7,50 per stuk.
+			      </h5>
+            <!--
+			      <h5>U kunt hier toegangskaarten bestellen voor het samenwerkingsconcert van het Studenten Harmonie Orkest Twente, QHarmony en De Ontzetting,
                 dat plaatsvindt op zondag 4 december om 14:30 uur in de Junushoff te Wageningen. Toegangskaarten kosten &euro;7,50 per stuk en kunnen online
                 worden betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang van het theater.
                 <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS Groepsretour ticket aan te schaffen.
@@ -109,7 +109,7 @@
                     </div>
                     <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
                     <div class="col-sm-2">
-                        <select class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
+                        <select class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()" disabled>
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -156,6 +156,7 @@
                     </div>
                 </div>
             </form>
+          -->
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
