@@ -40,14 +40,14 @@ if ($sql->num_rows == 0) {
 }
 
 $to = $email;
-$subject = "[SHOT] Toegangskaarten Muziekale Roadtrip";
+$subject = "[SHOT] Toegangskaarten SHOT Up and Dance!";
 
 $message = "
 <html>
 <head>
-<title>[SHOT] Muzikale Roadtrip</title>
+<title>[SHOT] SHOT Up and Dance!</title>
 <meta charset='UTF-8'>
-    <title>Muzikale Roadtrip SHOT - QHarmony - De Ontzetting | Kaartverkoop</title>
+    <title>SHOT Up and Dance! | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
@@ -57,14 +57,13 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten Muzikale Roadtrip<br>
-            SHOT - QHarmony - De Ontzetting</h2>
+        <h2>Toegangskaarten SHOT Up and Dance!</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>De toegangskaarten kunt u voor aanvang van het concert in de Junushoff afhalen en staan op uw naam.
+            <h5>De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam.
                 De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
 				Indien u nog vragen heeft, neem dan contact met ons op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>
 				of kijk op <a href='http://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a></h5>
@@ -77,10 +76,6 @@ $message = "
                 <p style='font-weight: bold;'>Aantal toeganskaarten:<br> {$tickets_concert}</p>
                 <p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>
                 <img src=\"http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg\" alt=\"SHOT Logo\"
-                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
-            <img src=\"https://upload.wikimedia.org/wikipedia/commons/e/e4/QHarmony_Nijmegen.png\" alt=\"QHarmony Logo\"
-                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
-            <img src=\"https://pbs.twimg.com/profile_images/2223593721/Sticker_button_Ontzetting_2008.jpg\" alt=\"Ontzetting Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>
