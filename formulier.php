@@ -72,23 +72,29 @@
 
 			<h5>
 			    U kunt hier toegangskaarten bestellen voor SHOT Up and Dance, het afsluitende concert van het 5e
-                lustrumjaar des SHOT. Dit concert vindt plaats op zaterdag 17 juni 2017 om 20:00 in Sportal 2 van het
+                lustrumjaar des SHOT. Dit concert vindt plaats op zaterdag 17 juni 2017 om 20:00 in Sporthal 2 van het
                 Sportcentrum op de campus van de Universiteit Twente te Enschede. Toegangskaarten kosten &euro;10,00 per
                 stuk in de voorverkoop en kunnen online worden betaald. De kaarten die u besteld heeft, kunt u
-                voorafgaand aan het concert ophalen bij de ingang van de sporthal. Het is ook mogelijk om toeganskaarten
-                aan de deur te verkrijgen voor &euro;12,50 per stuk.
+                voorafgaand aan het concert ophalen bij de ingang van de sporthal. Het is ook mogelijk om toegangskaarten
+                aan de deur te verkrijgen voor &euro;12,50 per stuk (Unioncard: &euro;10,00).
 
-                <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS
+                <br><br>Helaas is het voor dit concert niet mogelijk om een NS Groepsretour ticket bij ons aan te schaffen.
+
+                <!--<br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS
                 Groepsretour ticket aan te schaffen. Hiermee kunt u van een willekeurig station opstappen richting
                 station Enschede of station Enschede Kennispark. Vanaf station Enschede kunt u de bus (lijn 1, 8 of 9)
                 nemen richting de campus van de UT. Vanaf station Enschede Kennispark kunt u zich lopend begeven naar
                 het sportcentrum (15 tot 20 minuten) of de bus (lijn 1) nemen richting de campus van de UT
                 (let op: de buskosten zitten niet inbegrepen in het NS Groepsretour!). Dit ticket kost &euro;8,00 en
-                is verkrijgbaar t/m 1 juni 2017. Ook het NS Groepsretour kan online worden betaald.
+                is verkrijgbaar t/m 1 juni 2017. Ook het NS Groepsretour kan online worden betaald.-->
 
-                <br><br>Voor vragen naar aanleiding van de bestelprocedure van toegangskaarten voor het concert en de
-                NS Groupsretours kunt u contact opnemen met:
+                <br><br>Voor vragen naar aanleiding van de bestelprocedure van toegangskaarten voor het concert
+                kunt u contact opnemen met:
                 <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>
+
+                <!--<br><br>Voor vragen naar aanleiding van de bestelprocedure van toegangskaarten voor het concert en de
+                NS Groupsretours kunt u contact opnemen met:
+                <a href="mailto:kaartverkoop@shot.utwente.nl">kaartverkoop@shot.utwente.nl</a><br><br>-->
             </h5>
             <h4>Vul hier uw gegevens in:</h4>
             <form class="form-horizontal" role="form" method="post" onsubmit="return confirmForm()" action="<?php htmlspecialchars($_SERVER["PHP_SELF"])?>">
@@ -121,7 +127,7 @@
                     </div>
                     <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
                     <div class="col-sm-2">
-                        <select class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
+                        <select disabled class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -171,6 +177,8 @@
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
+                 style="width: 200px;" class="img-responsive img-rounded">
+            <img src="http://shot.utwente.nl/files/large/shotlogo_lustrum_1169_584.png" alt="SHOT Lustrum Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

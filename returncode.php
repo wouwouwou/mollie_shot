@@ -63,10 +63,17 @@ $message = "
         <div class='col-md-1'></div>
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
-            <h5>De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam.
-                De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
-				Indien u nog vragen heeft, neem dan contact met ons op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>
-				of kijk op <a href='http://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a></h5>
+            <h5>
+                De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam. <br><br>
+                
+                <!--De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam.
+                De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail
+                naar u toegezonden.<br><br>-->
+                
+				Indien u nog vragen heeft, neem dan contact met ons op via
+				<a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op
+				<a href='http://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a>
+			</h5>
             <br>
             Uw bestelgegevens:</h5>
             <div class='col-sm-2'>
@@ -74,8 +81,10 @@ $message = "
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
                 <p style='font-weight: bold;'>Aantal toeganskaarten:<br> {$tickets_concert}</p>
-                <p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>
+                <!-- <p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p> -->
                 <img src=\"http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg\" alt=\"SHOT Logo\"
+                 style=\"width: 200px;\" class=\"img-responsive img-rounded\">
+                <img src=\"http://shot.utwente.nl/files/large/shotlogo_lustrum_1169_584.png\" alt=\"SHOT Lustrum Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>
