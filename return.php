@@ -34,7 +34,7 @@
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
-            <img src="http://shot.utwente.nl/files/large/shotlogo_lustrum_1169_584.png" alt="SHOT Lustrum Logo"
+            <img src="https://yt3.ggpht.com/-pVcl7qsaWKY/AAAAAAAAAAI/AAAAAAAAAAA/aPtpu6RXQ0Q/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="ESMG Quadrivium Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

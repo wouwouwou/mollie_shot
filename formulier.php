@@ -13,7 +13,7 @@
             var email2 = document.getElementById("email2").value;
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
-            var price = (aantal_concert * 10.00) + (aantal_ns * 8.00);
+            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00);
             if(email != email2 && price <= 0) {
                 alert('De ingevoerde e-mail adressen zijn niet gelijk aan elkaar!\n' +
                     'Selecteer ten minste 1 ticket!');
@@ -40,7 +40,7 @@
         function confirmPrice() {
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
-            var price = (aantal_concert * 10.00) + (aantal_ns * 8.00);
+            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00);
             if (price <= 0) {
                 document.getElementById("price_error").innerHTML="Selecteer ten minste 1 ticket!";
             } else {
@@ -147,7 +147,7 @@
                     </div>
                     <label class="control-label col-sm-4" for="method">Prijs:</label>
                     <div class="col-sm-2">
-                        <input class="form-control" type="text" name="price" id="price" required value="€10.00" disabled>
+                        <input class="form-control" type="text" name="price" id="price" required value="€12.50" disabled>
                     </div>
                 </div>
                 <div class="form-group">
