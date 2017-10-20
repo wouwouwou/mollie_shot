@@ -64,9 +64,9 @@ $message = "
         <div class='col-md-8'>
             <h3>Uw bestelling is voltooid!</h3>
             <h5>
-                De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam. <br><br>
+                De toegangskaarten kunt u voor aanvang van het concert in de kerk afhalen en staan op uw naam. <br><br>
                 
-                <!--De toegangskaarten kunt u voor aanvang van het concert in het sportcentrum afhalen en staan op uw naam.
+                <!--De toegangskaarten kunt u voor aanvang van het concert in de kerk afhalen en staan op uw naam.
                 De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail
                 naar u toegezonden.<br><br>-->
                 
