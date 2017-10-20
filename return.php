@@ -3,7 +3,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>SHOT Up and Dance! | Kaartverkoop</title>
+    <title>Concert In SHOQ! | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <div class="page-header">
-        <h2>Toegangskaarten SHOT Up and Dance!</h2>
+        <h2>Toegangskaarten Concert In SHOQ!</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>

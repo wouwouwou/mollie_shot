@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "126095d72e8169043c14827970c21d09",
     "content-hash": "de3dff2da8d0331298217768af055d77",
     "packages": [
         {
             "name": "mollie/mollie-api-php",
-            "version": "1.7.1",
+            "version": "v1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/mollie-api-php.git",
-                "reference": "92004ffc38859c57ddcb93a933c493a4edaa25a6"
+                "reference": "db88588ffd40ec8caee814b7a126d26d7098ad99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/92004ffc38859c57ddcb93a933c493a4edaa25a6",
-                "reference": "92004ffc38859c57ddcb93a933c493a4edaa25a6",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/db88588ffd40ec8caee814b7a126d26d7098ad99",
+                "reference": "db88588ffd40ec8caee814b7a126d26d7098ad99",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
+                "ext-json": "*",
                 "ext-openssl": "*",
                 "php": ">=5.2"
             },
@@ -48,7 +48,7 @@
                     "email": "info@mollie.com"
                 }
             ],
-            "description": "Mollie API client library for PHP",
+            "description": "Mollie API client library for PHP. Mollie is a European Payment Service provider and offers international payment methods such as Mastercard, VISA, American Express and PayPal, and local payment methods such as iDEAL, Bancontact, SOFORT Banking, SEPA direct debit, Belfius Direct Net, KBC Payment Button and various gift cards such as Podiumcadeaukaart and fashioncheque.",
             "homepage": "https://github.com/mollie/mollie-api-php",
             "keywords": [
                 "CBC",
@@ -61,8 +61,11 @@
                 "charges",
                 "creditcard",
                 "direct debit",
+                "fashioncheque",
                 "gateway",
+                "gift cards",
                 "ideal",
+                "intersolve",
                 "kbc",
                 "mistercash",
                 "mollie",
@@ -79,7 +82,7 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2016-10-05 12:28:16"
+            "time": "2017-08-22T09:24:05+00:00"
         }
     ],
     "packages-dev": [],

@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>SHOT Up and Dance! | Kaartverkoop</title>
+    <title>Concert In SHOQ! | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -56,27 +56,25 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            SHOT Up and Dance!</h2>
+            Concert In SHOQ!</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8">
-            <h3>Welkom op de bestelwebsite voor SHOT Up and Dance!</h3>
+            <h3>Welkom op de bestelwebsite voor Concert In SHOQ!</h3>
 
             <!--<h5>
-                Helaas kunt u online geen toegangskaarten meer bestellen voor SHOT Up and Dance,
-                dat plaatsvindt op 17 juni 2017 om 20:00 uur in Sporthal 2 van het Sportcentrum op de campus van de
-                Universiteit Twente te Enschede. Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten
-                daar &euro;12,50 per stuk.
+                Helaas kunt u online geen toegangskaarten meer bestellen voor Concert In SHOQ!,
+                dat plaatsvindt op 17 november 2017 om 19:30 uur in de Grote Kerk in het centrum te Enschede.
+                Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar &euro;12,50 per stuk.
             </h5>-->
 
 			<h5>
-			    U kunt hier toegangskaarten bestellen voor SHOT Up and Dance, het afsluitende concert van het 5e
-                lustrumjaar des SHOT. Dit concert vindt plaats op zaterdag 17 juni 2017 om 20:00 in Sporthal 2 van het
-                Sportcentrum op de campus van de Universiteit Twente te Enschede. Toegangskaarten kosten &euro;10,00 per
-                stuk in de voorverkoop en kunnen online worden betaald. De kaarten die u besteld heeft, kunt u
-                voorafgaand aan het concert ophalen bij de ingang van de sporthal. Het is ook mogelijk om toegangskaarten
-                aan de deur te verkrijgen voor &euro;12,50 per stuk (Unioncard: &euro;10,00).
+			    U kunt hier toegangskaarten bestellen voor Concert In SHOQ!, het concert van de harmonie-orkesten SHOT
+                en Auletes (ESMG Quadrivium). Dit concert vindt plaats op vrijdag 17 november 2017 om 19:30 in de
+                Grote Kerk op de oude markt te Enschede. Toegangskaarten kosten &euro;12,50 per stuk in de voorverkoop
+                en kunnen online worden betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert
+                ophalen bij de ingang van de kerk. Het is ook mogelijk om toegangskaarten aan de deur te verkrijgen.
 
                 <br><br>Helaas is het voor dit concert niet mogelijk om een NS Groepsretour ticket bij ons aan te schaffen.
 
@@ -173,12 +171,12 @@
                         <button type="submit" class="btn btn-default">Bestellen en betalen</button>
                     </div>
                 </div>
-            </form>
+            </form>-->
         </div>
         <div class="col-md-3">
             <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
-            <img src="http://shot.utwente.nl/files/large/shotlogo_lustrum_1169_584.png" alt="SHOT Lustrum Logo"
+            <img src="http://esmgquadrivium.nl/wp-content/uploads/2017/04/q-logo-white-small.png" alt="ESMG Quadrivium Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

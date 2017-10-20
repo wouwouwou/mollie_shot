@@ -40,14 +40,14 @@ if ($sql->num_rows == 0) {
 }
 
 $to = $email;
-$subject = "[SHOT] Toegangskaarten SHOT Up and Dance!";
+$subject = "[SHOT] Toegangskaarten Concert In SHOQ!";
 
 $message = "
 <html>
 <head>
-<title>[SHOT] SHOT Up and Dance!</title>
+<title>[SHOT] Concert In SHOQ!</title>
 <meta charset='UTF-8'>
-    <title>SHOT Up and Dance! | Kaartverkoop</title>
+    <title>Concert In SHOQ! | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
@@ -57,7 +57,7 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten SHOT Up and Dance!</h2>
+        <h2>Toegangskaarten Concert In SHOQ!</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
