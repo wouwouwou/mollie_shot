@@ -13,7 +13,8 @@
             var email2 = document.getElementById("email2").value;
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
-            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00);
+            var aantal_st = document.getElementById("aantal_st").selectedIndex;
+            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00) + (aantal_st * 7.50);
             if(email != email2 && price <= 0) {
                 alert('De ingevoerde e-mail adressen zijn niet gelijk aan elkaar!\n' +
                     'Selecteer ten minste 1 ticket!');
@@ -40,7 +41,8 @@
         function confirmPrice() {
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
-            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00);
+            var aantal_st = document.getElementById("aantal_st").selectedIndex;
+            var price = (aantal_concert * 12.50) + (aantal_ns * 8.00) + (aantal_st * 7.50);
             if (price <= 0) {
                 document.getElementById("price_error").innerHTML="Selecteer ten minste 1 ticket!";
             } else {
@@ -73,8 +75,10 @@
 			    U kunt hier toegangskaarten bestellen voor Concert In SHOQ!, het concert van de harmonie-orkesten SHOT
                 en Auletes (ESMG Quadrivium). Dit concert vindt plaats op vrijdag 17 november 2017 om 19:30 in de
                 Grote Kerk op de oude markt te Enschede. Toegangskaarten kosten &euro;12,50 per stuk in de voorverkoop
-                en kunnen online worden betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert
-                ophalen bij de ingang van de kerk. Het is ook mogelijk om toegangskaarten aan de deur te verkrijgen.
+                (studenten: &euro;7,50) en kunnen online worden betaald. De kaarten die u besteld heeft, kunt u
+                voorafgaand aan het concert ophalen bij de ingang van de kerk. Het is ook mogelijk om toegangskaarten
+                aan de deur te verkrijgen. In het geval u gebruik maakt van het studenten-tarief, verzoeken wij u uw
+                studentenkaart mee te nemen.
 
                 <br><br>Helaas is het voor dit concert niet mogelijk om een NS Groepsretour ticket bij ons aan te schaffen.
 
@@ -123,9 +127,9 @@
                     <div class="col-sm-4">
                         <input class="form-control" type="text" name="lastname" required>
                     </div>
-                    <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
+                    <label class="control-label col-sm-4" for="aantal_st">Aantal toegangskaarten (student):</label>
                     <div class="col-sm-2">
-                        <select disabled class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
+                        <select class="form-control" name="aantal_st" id="aantal_st" onchange="confirmPrice()">
                             <option value="0" selected>0</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -145,9 +149,21 @@
                     <div class="col-sm-4">
                         <input class="form-control" type="text" name="e-mail" id="email" required pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}">
                     </div>
-                    <label class="control-label col-sm-4" for="method">Prijs:</label>
+                    <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
                     <div class="col-sm-2">
-                        <input class="form-control" type="text" name="price" id="price" required value="€12.50" disabled>
+                        <select disabled class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
@@ -157,8 +173,14 @@
                         <div id="emailerror" style="color: red;"></div>
                         <div id="price_error" style="color: red;"></div>
                     </div>
-                    <label class="control-label col-sm-3" for="method">Betaalmethode:</label>
-                    <div class="col-sm-3">
+                    <label class="control-label col-sm-4" for="method">Prijs:</label>
+                    <div class="col-sm-2">
+                        <input class="form-control" type="text" name="price" id="price" required value="€12.50" disabled>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="method">Betaalmethode:</label>
+                    <div class="col-sm-4">
                         <select class="form-control" name="method">
                             <option value="ideal">iDeal</option>
                             <option value="mistercash">Bancontact</option>

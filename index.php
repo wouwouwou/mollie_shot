@@ -32,7 +32,8 @@ try
 
     $tickets_concert = intval($_POST["aantal_concert"]);
     $tickets_ns = intval($_POST["aantal_ns"]);
-    $price = floatval($tickets_concert) * 12.50 + floatval($tickets_ns) * 8.00;
+    $tickets_st = intval($_POST["aantal_st"]);
+    $price = floatval($tickets_concert) * 12.50 + floatval($tickets_ns) * 8.00 + floatval($tickets_st) * 7.50;
 
     $time = time();
 
@@ -80,6 +81,7 @@ try
                     $time,
                     $payment->status,
                     $tickets_concert,
+                    $tickets_st,
                     $tickets_ns,
                     $payment->amount);
 
@@ -97,7 +99,7 @@ catch (Mollie_API_Exception $e)
 /*
  * Writes to the database with prepared statement
  */
-function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_ns, $price)
+function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $price)
 {
     global $servername, $username, $password, $dbname;
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -106,10 +108,10 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = $conn->prepare("INSERT INTO orders (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_ns, total_price)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $sql = $conn->prepare("INSERT INTO orders (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $sql->bind_param("ssssisiid",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_ns, $price);
+    $sql->bind_param("ssssisiiid",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $price);
 
     $result = $sql->execute();
 

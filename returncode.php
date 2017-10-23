@@ -20,7 +20,7 @@ $time = $_GET["int"];
 global $servername, $username, $password, $dbname;
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_ns FROM orders WHERE unix_time=? AND status=?");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_st, tickets_ns FROM orders WHERE unix_time=? AND status=?");
 
 $req_status = "paid";
 $sql->bind_param("ss", $time, $req_status);
@@ -35,7 +35,7 @@ if ($sql->num_rows == 0) {
     echo "Er ging helaas iets mis! Probeer het <a href='./'>hier</a> opnieuw of neem contact op met <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>";
     exit;
 } else {
-    $sql->bind_result($id, $voornaam, $achternaam, $email, $tickets_concert, $tickets_ns);
+    $sql->bind_result($id, $voornaam, $achternaam, $email, $tickets_concert, $tickets_st, $tickets_ns);
     $sql->fetch();
 }
 
@@ -81,6 +81,7 @@ $message = "
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
                 <p style='font-weight: bold;'>Aantal toeganskaarten:<br> {$tickets_concert}</p>
+                <p style='font-weight: bold;'>Aantal toeganskaarten (student):<br> {$tickets_st}</p>
                 <!-- <p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p> -->
                 <img src=\"http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
