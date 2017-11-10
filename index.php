@@ -13,12 +13,12 @@
 try
 {
     //Initialize Mollie API and DB connection
-    require "initialize.php";
+    include "initialize.php";
 
     //Show form to customer
     if ($_SERVER["REQUEST_METHOD"] != "POST")
     {
-        require "formulier.php";
+        include "formulier.php";
         exit;
     }
 
@@ -33,7 +33,7 @@ try
     $tickets_concert = intval($_POST["aantal_concert"]);
     $tickets_ns = intval($_POST["aantal_ns"]);
     $tickets_st = intval($_POST["aantal_st"]);
-    $price = floatval($tickets_concert) * 12.50 + floatval($tickets_ns) * 8.00 + floatval($tickets_st) * 7.50;
+    $price = floatval($tickets_concert) * $normal_price + floatval($tickets_ns) * $ns_retour_price + floatval($tickets_st) * $student_price;
 
     $time = time();
 
