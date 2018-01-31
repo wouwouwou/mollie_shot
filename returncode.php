@@ -33,10 +33,7 @@ $sql->bind_param("ss", $time, $req_status);
 $sql->execute();
 $sql->store_result();
 
-if ($sql->num_rows == 0) {
-    echo "Er ging helaas iets mis! Probeer het <a href='./'>hier</a> opnieuw of neem contact op met <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>";
-    exit;
-} else if ($sql->num_rows > 1) {
+if ($sql->num_rows == 0 || $sql->num_rows > 1) {
     echo "Er ging helaas iets mis! Probeer het <a href='./'>hier</a> opnieuw of neem contact op met <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>";
     exit;
 } else {
