@@ -10,7 +10,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title><?php print($concert_title); ?> | Kaartverkoop</title>
+    <title>Voorjaarsconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -192,7 +192,8 @@
                         </div>
                         <label class="control-label col-sm-4" for="method">Prijs:</label>
                         <div class="col-sm-2">
-                            <input class="form-control" type="text" name="price" id="price" required value="€12.50"
+                            <input class="form-control" type="text" name="price" id="price" required
+                                   value="€<?php printf("%.2f", $normal_price);?>"
                                    disabled>
                         </div>
                     </div>
