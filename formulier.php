@@ -10,7 +10,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Voorjaarsconcert | Kaartverkoop</title>
+    <title>Uitzwaaiconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -70,7 +70,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Voorjaarsconcert Euregio Brassband & SHOT</h2>
+            Uitzwaaiconcert SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -78,9 +78,9 @@
             <h3>Welkom op de bestelwebsite voor <?php print($concert_title); ?></h3>
             <h5>
             <?php if($currently_selling) { ?>
-                U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van Euregio Brassband en
+                U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
                 SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                in de Ontmoetingskerk te Enschede (Varviksingel 139). Toegangskaarten kosten
+                in de Rank te Glanerbrug (Schipholtstraat 41). Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang van de
@@ -101,8 +101,8 @@
                 <?php } ?>
             <?php } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
-                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de Ontmoetingskerk
-                te Enschede (Varviksingel 139). Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar
+                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de Rank
+                te Glanerbrug (Schipholtstraat 41). Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).
             <?php } ?>
@@ -216,10 +216,7 @@
             <?php } ?>
         </div>
         <div class="col-md-3">
-            <img src="http://www.studentunion.utwente.nl/verenigingeninfo/fotos/shotlogo_final1.jpg" alt="SHOT Logo"
-                 style="width: 200px;" class="img-responsive img-rounded">
-            <img src="https://www.euregiobrassband.nl/templates/siteground-j16-41/images/website_logo.png"
-                 alt="ESMG Quadrivium Logo"
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
