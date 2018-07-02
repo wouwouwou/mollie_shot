@@ -68,11 +68,11 @@ $message = "
             <h5>";
 
 if($ns_retour_possible) {
-    $message .= "De toegangskaarten kunt u voor aanvang van het concert op de concertlocatie afhalen en staan op uw naam.
+    $message .= "De toegangskaarten kunt u voor aanvang van het concert afhalen op de concertlocatie en staan op uw naam.
                 De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail
                 naar u toegezonden.<br><br>";
 } else {
-    $message .= "De toegangskaarten kunt u voor aanvang van het concert op de concertlocatie en staan op uw naam. <br><br>";
+    $message .= "De toegangskaarten kunt u voor aanvang van het concert afhalen op de concertlocatie en staan op uw naam. <br><br>";
 }
 
 $message .=  "Indien u nog vragen heeft, neem dan contact met ons op via

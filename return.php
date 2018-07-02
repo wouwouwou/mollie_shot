@@ -29,8 +29,8 @@
             <h3>Uw bestelling is voltooid!</h3>
             <h5>
                 <?php if($ns_retour_possible) { ?>
-                    Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
-                    op de concertlocatie afhalen en staan op uw naam. De NS Groupretours worden op een later moment verwerkt en
+                    Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert afhalen
+                    op de concertlocatie en staan op uw naam. De NS Groupretours worden op een later moment verwerkt en
                     uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
                 <?php } else { ?>
                     Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
