@@ -42,14 +42,14 @@ if ($sql->num_rows == 0 || $sql->num_rows > 1) {
 }
 
 $to = $email;
-$subject = "[SHOT] Toegangskaarten Voorjaarsconcert";
+$subject = "[SHOT | Musilon] Toegangskaarten Pop Meets Classical";
 
 $message = "
 <html>
 <head>
-<title>[SHOT] Uitzwaaiconcert</title>
+<title>[SHOT | Musilon] Pop Meets Classical</title>
 <meta charset='UTF-8'>
-    <title>Uitzwaaiconcert | Kaartverkoop</title>
+    <title>Pop Meets Classical | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
@@ -59,7 +59,7 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten Uitzwaaiconcert</h2>
+        <h2>Toegangskaarten Pop Meets Classical</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
@@ -94,6 +94,8 @@ if($ns_retour_possible) {
 
 $message .= "   <img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
+                <img src=\"https://www.musilon.utwente.nl/wp-content/uploads/2015/03/Musilon-logo-zwartwit.png\"
+                 alt=\"Musilon Logo\" style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>
     </div>

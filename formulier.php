@@ -10,7 +10,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Uitzwaaiconcert | Kaartverkoop</title>
+    <title>Pop Meets Classical | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -70,7 +70,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Uitzwaaiconcert SHOT</h2>
+            Pop Meets Classical | SHOT & Musilon</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -79,8 +79,8 @@
             <h5>
             <?php if($currently_selling) { ?>
                 U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
-                SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                in de Rank te Glanerbrug (Schipholtstraat 41). Toegangskaarten kosten
+                SHOT en Musilon. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
+                in de St. Jacobuskerk te Enschede (Oude Markt 1). Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang van de
@@ -218,6 +218,8 @@
         <div class="col-md-3">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
+            <img src="https://www.musilon.utwente.nl/wp-content/uploads/2015/03/Musilon-logo-zwartwit.png"
+                 alt="Musilon Logo" style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
 </div>
