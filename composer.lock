@@ -1,30 +1,30 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "de3dff2da8d0331298217768af055d77",
     "packages": [
         {
             "name": "mollie/mollie-api-php",
-            "version": "v1.9.4",
+            "version": "v1.9.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mollie/mollie-api-php.git",
-                "reference": "db88588ffd40ec8caee814b7a126d26d7098ad99"
+                "reference": "ed1683b244676360d951c7c5beefe02782cc20eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/db88588ffd40ec8caee814b7a126d26d7098ad99",
-                "reference": "db88588ffd40ec8caee814b7a126d26d7098ad99",
+                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/ed1683b244676360d951c7c5beefe02782cc20eb",
+                "reference": "ed1683b244676360d951c7c5beefe02782cc20eb",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "ext-openssl": "*",
-                "php": ">=5.2"
+                "php": ">=5.3"
             },
             "require-dev": {
                 "phpunit/phpunit": "^3.7 || ^4.8 || ^5.4"
@@ -82,7 +82,7 @@
                 "sofortbanking",
                 "subscriptions"
             ],
-            "time": "2017-08-22T09:24:05+00:00"
+            "time": "2018-09-04T09:59:56+00:00"
         }
     ],
     "packages-dev": [],
