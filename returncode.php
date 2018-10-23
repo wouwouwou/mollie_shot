@@ -85,8 +85,8 @@ $message .=  "Indien u nog vragen heeft, neem dan contact met ons op via
                 <p style='font-weight: bold;'>Voornaam:<br> {$voornaam}</p>
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
-                <p style='font-weight: bold;'>Aantal toeganskaarten:<br> {$tickets_concert}</p>
-                <p style='font-weight: bold;'>Aantal toeganskaarten (student):<br> {$tickets_st}</p>";
+                <p style='font-weight: bold;'>Aantal toegangskaarten:<br> {$tickets_concert}</p>
+                <p style='font-weight: bold;'>Aantal toegangskaarten (student):<br> {$tickets_st}</p>";
 
 if($ns_retour_possible) {
     $message .= "<p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>";
