@@ -101,8 +101,8 @@
                 <?php } ?>
             <?php } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
-                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de Rank
-                te Glanerbrug (Schipholtstraat 41). Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar
+                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de St. Jacobuskerk
+                te Enschede (Oude Markt 1). Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).
             <?php } ?>
