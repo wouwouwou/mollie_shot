@@ -11,7 +11,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Pop Meets Classical | Kaartverkoop</title>
+    <title>Jubileumconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Toegangskaarten <br>
-            Pop Meets Classical | SHOT & Musilon</h2>
+            Jubileumconcert | SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -34,7 +34,7 @@
                     uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
                 <?php } else { ?>
                     Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
-                    in de kerk afhalen en staan op uw naam. <br><br>
+                    afhalen op de concertlocatie en staan op uw naam. <br><br>
                 <?php } ?>
 				Indien u binnen enkele minuten geen e-mail ontvangen heeft, of heeft u een andere vraag, neem dan contact met ons
                 op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op
@@ -44,8 +44,6 @@
         <div class="col-md-3">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
-            <img src="https://www.musilon.utwente.nl/wp-content/uploads/2015/03/Musilon-logo-zwartwit.png"
-                 alt="Musilon Logo" style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
 </div>

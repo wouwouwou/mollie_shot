@@ -10,7 +10,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Pop Meets Classical | Kaartverkoop</title>
+    <title>Jubileumconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -70,7 +70,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Pop Meets Classical | SHOT & Musilon</h2>
+            Jubileumconcert | SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -79,12 +79,12 @@
             <h5>
             <?php if($currently_selling) { ?>
                 U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
-                SHOT en Musilon. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                in de St. Jacobuskerk te Enschede (Oude Markt 1). Toegangskaarten kosten
+                SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
+                in de Vrijhof (zaal: Agora) op de Universiteit Twente te Enschede. Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
-                betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang van de
-                kerk. Het is ook  mogelijk om toegangskaarten aan de deur te verkrijgen. In het geval u gebruik maakt
+                betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
+                Het is ook  mogelijk om toegangskaarten aan de deur te verkrijgen. In het geval u gebruik maakt
                 van het studenten-tarief, verzoeken wij u uw studentenkaart mee te nemen.
                 <?php if($ns_retour_possible) { ?>
                     <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS
@@ -101,8 +101,9 @@
                 <?php } ?>
             <?php } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
-                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de St. Jacobuskerk
-                te Enschede (Oude Markt 1). Kaarten zijn nog wel beschikbaar aan de deur. Toegangskaarten kosten daar
+                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de Vrijhof
+                (zaal: Agora) op de Universiteit Twente te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
+                Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).
             <?php } ?>
@@ -218,8 +219,6 @@
         <div class="col-md-3">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
-            <img src="https://www.musilon.utwente.nl/wp-content/uploads/2015/03/Musilon-logo-zwartwit.png"
-                 alt="Musilon Logo" style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
 </div>

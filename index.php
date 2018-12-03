@@ -61,7 +61,7 @@ try
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
         "method"       => $method,
-        "description"  => "Pop Meets Classical | SHOT & Musilon " . $time,
+        "description"  => "Jubileumconcert | SHOT " . $time,
         //"redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
         "redirectUrl"  => "http://www.shot.utwente.nl/kaartverkoop/return.php?int={$time}",
         //"webhookUrl"   => "http://{$ip}/mollie_shot/src/webhook.php",
