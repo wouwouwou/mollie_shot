@@ -42,16 +42,17 @@ if ($sql->num_rows == 0 || $sql->num_rows > 1) {
 }
 
 $to = $email;
-$subject = "[SHOT] Toegangskaarten Jubileumconcert";
+$subject = "[SHOT] Toegangskaarten Maestroconcert";
 
 $message = "
 <html>
 <head>
-<title>[SHOT] Jubileumconcert</title>
+<title>[SHOT] Maestroconcert</title>
 <meta charset='UTF-8'>
-    <title>Jubileumconcert | Kaartverkoop</title>
+    <title>Maestroconcert | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link href=\"https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico\" rel=\"shortcut icon\" type=\"image/vnd.microsoft.icon\" />
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </head>
@@ -59,7 +60,7 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten Jubileumconcert</h2>
+        <h2>Toegangskaarten Maestroconcert</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
@@ -92,7 +93,7 @@ if($ns_retour_possible) {
     $message .= "<p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>";
 }
 
-$message .= "   <img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png\" alt=\"SHOT Logo\"
+$message .= "   <img src=\"https://shot.utwente.nl/images/logos/maestrologo.png\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>

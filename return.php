@@ -14,6 +14,7 @@
     <title>Maestroconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -42,7 +43,7 @@
             </h5>
         </div>
         <div class="col-md-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
+            <img src="https://shot.utwente.nl/images/logos/maestrologo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>
