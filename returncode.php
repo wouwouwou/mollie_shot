@@ -51,9 +51,9 @@ $message = "
 <meta charset='UTF-8'>
     <title>Jubileumconcert | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
-    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 </head>
 <body>
 
@@ -77,7 +77,7 @@ if($ns_retour_possible) {
 
 $message .=  "Indien u nog vragen heeft, neem dan contact met ons op via
 				<a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op
-				<a href='http://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a>
+				<a href='https://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a>
 			</h5>
             <br>
             Uw bestelgegevens:</h5>

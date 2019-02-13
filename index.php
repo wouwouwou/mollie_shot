@@ -62,10 +62,8 @@ try
         "amount"       => $price,
         "method"       => $method,
         "description"  => "Jubileumconcert | SHOT " . $time,
-        //"redirectUrl"  => "http://localhost/mollie_shot/src/return.php?int={$time}",
-        "redirectUrl"  => "http://www.shot.utwente.nl/kaartverkoop/return.php?int={$time}",
-        //"webhookUrl"   => "http://{$ip}/mollie_shot/src/webhook.php",
-        "webhookUrl"   => "http://www.shot.utwente.nl/kaartverkoop/webhook.php",
+        "redirectUrl"  => "https://www.shot.utwente.nl/sales/return.php?int={$time}",
+        "webhookUrl"   => "https://www.shot.utwente.nl/sales/webhook.php",
         "metadata"     => array(
             "time" => $time,
         ),
@@ -88,7 +86,6 @@ try
     /*
      * Send the customer off to complete the payment.
      */
-	//header("Location: http://shot.utwente.nl/kaartverkoop/return.php");
     header("Location: " . $payment->getPaymentUrl());
 }
 catch (Mollie_API_Exception $e)
