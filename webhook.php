@@ -53,7 +53,7 @@ function database_write ($payment_id, $status, $time)
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = $conn->prepare("UPDATE orders SET status=? WHERE payment_id=? AND unix_time=?");
+    $sql = $conn->prepare("UPDATE sales SET status=? WHERE payment_id=? AND unix_time=?");
 
     $sql->bind_param("ssi", $status, $payment_id, $time);
 

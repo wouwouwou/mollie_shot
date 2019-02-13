@@ -30,7 +30,7 @@ require "../initialize.php";
 global $servername, $username, $password, $dbname;
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price FROM orders GROUP BY unix_time");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price FROM sales GROUP BY unix_time");
 
 $sql->execute();
 $sql->store_result();

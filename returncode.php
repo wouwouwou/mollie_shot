@@ -25,7 +25,7 @@ global $concert_title,
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_st, tickets_ns FROM orders WHERE unix_time=? AND status=?");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_st, tickets_ns FROM sales WHERE unix_time=? AND status=?");
 
 $req_status = "paid";
 $sql->bind_param("ss", $time, $req_status);

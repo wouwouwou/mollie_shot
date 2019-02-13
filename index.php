@@ -108,7 +108,7 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = $conn->prepare("INSERT INTO orders (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price)
+    $sql = $conn->prepare("INSERT INTO sales (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
     $sql->bind_param("ssssisiiid",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $price);
