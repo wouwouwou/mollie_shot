@@ -10,7 +10,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Jubileumconcert | Kaartverkoop</title>
+    <title>Maestroconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -70,7 +70,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Jubileumconcert | SHOT</h2>
+            Maestroconcert | SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -80,7 +80,7 @@
             <?php if($currently_selling) { ?>
                 U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
                 SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                in de Vrijhof (zaal: Agora) op de Universiteit Twente te Enschede. Toegangskaarten kosten
+                in het Muziekcentrum te Enschede. Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
@@ -101,8 +101,8 @@
                 <?php } ?>
             <?php } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
-                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de Vrijhof
-                (zaal: Agora) op de Universiteit Twente te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
+                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in het
+                Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
                 Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).
@@ -217,7 +217,7 @@
             <?php } ?>
         </div>
         <div class="col-md-3">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/SHOT_logo.png" alt="SHOT Logo"
+            <img src="https://shot.utwente.nl/images/logos/maestrologo.png" alt="SHOT Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

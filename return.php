@@ -11,7 +11,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Jubileumconcert | Kaartverkoop</title>
+    <title>Maestroconcert | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -21,7 +21,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Toegangskaarten <br>
-            Jubileumconcert | SHOT</h2>
+            Maestroconcert | SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
