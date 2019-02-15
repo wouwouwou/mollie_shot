@@ -5,7 +5,10 @@
              $concert_title,
              $ns_retour_possible,
              $concert_date,
-             $concert_time; ?>
+             $concert_time,
+             $student_group_discount,
+             $student_group_discount_available,
+             $student_group_discount_from_amount_of_students; ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -23,9 +26,15 @@
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
+            var discount = 0;
+            if (<?php print($student_group_discount_available) ?> &&
+            aantal_st >= <?php print($student_group_discount_from_amount_of_students) ?>) {
+                discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
+            }
             var price = (aantal_concert * <?php printf("%.2f", $normal_price);?>) +
                 (aantal_ns * <?php printf("%.2f", $ns_retour_price); ?>) +
-                (aantal_st * <?php printf("%.2f", $student_price); ?>);
+                (aantal_st * <?php printf("%.2f", $student_price); ?>) -
+                discount;
             if(email !== email2 && price <= 0) {
                 alert('De ingevoerde e-mail adressen zijn niet gelijk aan elkaar!\n' +
                     'Selecteer ten minste 1 ticket!');
@@ -53,21 +62,26 @@
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
+            var discount = 0;
+            if (<?php print($student_group_discount_available) ?> &&
+            aantal_st >= <?php print($student_group_discount_from_amount_of_students) ?>) {
+                discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
+            }
             var price = (aantal_concert * <?php printf("%.2f", $normal_price);?>) +
                 (aantal_ns * <?php printf("%.2f", $ns_retour_price); ?>) +
-                (aantal_st * <?php printf("%.2f", $student_price); ?>);
+                (aantal_st * <?php printf("%.2f", $student_price); ?>) -
+                discount;
             if (price <= 0) {
                 document.getElementById("price_error").innerHTML="Selecteer ten minste 1 ticket!";
             } else {
                 document.getElementById("price_error").innerHTML="";
             }
-            document.getElementById("price").value= "€" + price.toFixed(2);
-
+            document.getElementById("discount").value = "€" + discount.toFixed(2);
+            document.getElementById("price").value = "€" + price.toFixed(2);
         }
     </script>
 </head>
 <body>
-
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
@@ -87,7 +101,13 @@
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
                 Het is ook  mogelijk om toegangskaarten aan de deur te verkrijgen. In het geval u gebruik maakt
                 van het studenten-tarief, verzoeken wij u uw studentenkaart mee te nemen.
-                <?php if($ns_retour_possible) { ?>
+                <?php if($student_group_discount_available) { ?>
+                    Bij een groepsgrootte van minstens <?php print($student_group_discount_from_amount_of_students) ?>
+                    studenten geldt er een korting van &euro; <?php printf("%.2f", $student_group_discount);?>
+                    op iedere aangekochte studenten-toegangskaart.
+                <?php } else { ?>
+                    Voor dit concert geldt geen groepskorting.
+                <?php } if($ns_retour_possible) { ?>
                     <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS
                     Groepsretour ticket aan te schaffen. Hiermee kunt u van een willekeurig station opstappen richting
                     station Enschede of station Enschede Kennispark. Vanaf station Enschede kunt u de bus (lijn 1, 8 of 9)
@@ -107,6 +127,13 @@
                 Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).
+                <?php if($student_group_discount_available) { ?>
+                    Bij een groepsgrootte van minstens <?php print($student_group_discount_from_amount_of_students) ?>
+                    studenten geldt er een korting van &euro; <?php printf("%.2f", $student_group_discount);?>
+                    op iedere aangekochte studenten-toegangskaart.
+                <?php } else { ?>
+                    Voor dit concert geldt geen groepskorting.
+                <?php } ?>
             <?php } ?>
                 <br><br>Voor vragen naar aanleiding van de bestelprocedure, of heeft u andere vragen en / of
                         opmerkingen, dan kunt u contact opnemen met:
@@ -192,10 +219,10 @@
                             <div id="emailerror" style="color: red;"></div>
                             <div id="price_error" style="color: red;"></div>
                         </div>
-                        <label class="control-label col-sm-4" for="method">Prijs:</label>
+                        <label class="control-label col-sm-4" for="method">Groepskorting:</label>
                         <div class="col-sm-2">
-                            <input class="form-control" type="text" name="price" id="price" required
-                                   value="€<?php printf("%.2f", $normal_price);?>"
+                            <input class="form-control" type="text" name="discount" id="discount" required
+                                   value="€<?php printf("%.2f", $discount);?>"
                                    disabled>
                         </div>
                     </div>
@@ -207,6 +234,12 @@
                                 <option value="mistercash">Bancontact</option>
                                 <option value="sofort">SOFORT Banking</option>
                             </select>
+                        </div>
+                        <label class="control-label col-sm-4" for="method">Totaalprijs:</label>
+                        <div class="col-sm-2">
+                            <input class="form-control" type="text" name="price" id="price" required
+                                   value="€<?php printf("%.2f", $normal_price);?>"
+                                   disabled>
                         </div>
                     </div>
                     <div class="form-group">

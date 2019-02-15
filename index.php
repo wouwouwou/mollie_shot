@@ -33,7 +33,14 @@ try
     $tickets_concert = intval($_POST["aantal_concert"]);
     $tickets_ns = intval($_POST["aantal_ns"]);
     $tickets_st = intval($_POST["aantal_st"]);
-    $price = floatval($tickets_concert) * $normal_price + floatval($tickets_ns) * $ns_retour_price + floatval($tickets_st) * $student_price;
+    $discount = 0;
+    if ($student_group_discount_available && $tickets_st >= $student_group_discount_from_amount_of_students) {
+        $discount = floatval($tickets_st * $student_group_discount);
+    }
+    $price = floatval($tickets_concert) * $normal_price +
+        floatval($tickets_ns) * $ns_retour_price +
+        floatval($tickets_st) * $student_price -
+        $discount;
 
     $time = time();
 
@@ -81,6 +88,7 @@ try
                     $tickets_concert,
                     $tickets_st,
                     $tickets_ns,
+                    $discount,
                     $payment->amount);
 
     /*
@@ -96,7 +104,7 @@ catch (Mollie_API_Exception $e)
 /*
  * Writes to the database with prepared statement
  */
-function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $price)
+function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $discount, $price)
 {
     global $servername, $username, $password, $dbname;
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -105,10 +113,14 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = $conn->prepare("INSERT INTO sales (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, total_price)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $firstname = htmlspecialchars($firstname);
+    $lastname = htmlspecialchars($lastname);
+    $e_mail = htmlspecialchars($e_mail);
 
-    $sql->bind_param("ssssisiiid",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $price);
+    $sql = $conn->prepare("INSERT INTO sales (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, discount, total_price)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $sql->bind_param("ssssisiiidd",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $discount, $price);
 
     $result = $sql->execute();
 
