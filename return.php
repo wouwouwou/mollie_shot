@@ -11,7 +11,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Maestroconcert | Kaartverkoop</title>
+    <title>Avond van de Filmmuziek | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -22,7 +22,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Toegangskaarten <br>
-            Maestroconcert | SHOT</h2>
+            Avond van de Filmmuziek | SHOT & Euregio Brassband</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -44,6 +44,8 @@
         </div>
         <div class="col-md-3">
             <img src="https://shot.utwente.nl/images/logos/maestrologo.png" alt="SHOT Logo"
+                 style="width: 200px;" class="img-responsive img-rounded">
+            <img src="https://www.euregiobrassband.nl/images/ebb_logo_signature.png" alt="Euregio Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

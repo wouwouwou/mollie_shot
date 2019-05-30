@@ -13,7 +13,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Maestroconcert | Kaartverkoop</title>
+    <title>Avond van de Filmmuziek | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -26,8 +26,8 @@
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
-            var discount = 0;
-            if (<?php print($student_group_discount_available) ?> &&
+            var discount = 0.00;
+            if (<?php echo $student_group_discount_available ? 'true' : 'false'; ?> &&
             aantal_st >= <?php print($student_group_discount_from_amount_of_students) ?>) {
                 discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
             }
@@ -63,7 +63,7 @@
             var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
             var discount = 0;
-            if (<?php print($student_group_discount_available) ?> &&
+            if (<?php echo $student_group_discount_available ? 'true' : 'false'; ?> &&
             aantal_st >= <?php print($student_group_discount_from_amount_of_students) ?>) {
                 discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
             }
@@ -85,7 +85,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Maestroconcert | SHOT</h2>
+            Avond van de Filmmuziek | SHOT & Euregio Brassband</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -95,7 +95,7 @@
             <?php if($currently_selling) { ?>
                 U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
                 SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                in het Muziekcentrum te Enschede. Toegangskaarten kosten
+                inde audiozaal in gebouw de Vrijhof van de Universiteit Twente (Veldmaat 5). Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
@@ -252,6 +252,8 @@
         </div>
         <div class="col-md-3">
             <img src="https://shot.utwente.nl/images/logos/maestrologo.png" alt="SHOT Logo"
+                 style="width: 200px;" class="img-responsive img-rounded">
+            <img src="https://www.euregiobrassband.nl/images/ebb_logo_signature.png" alt="Euregio Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

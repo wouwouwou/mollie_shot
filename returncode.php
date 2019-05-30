@@ -47,9 +47,9 @@ $subject = "[SHOT] Toegangskaarten Maestroconcert";
 $message = "
 <html>
 <head>
-<title>[SHOT] Maestroconcert</title>
+<title>[SHOT] Avond van de Filmmuziek</title>
 <meta charset='UTF-8'>
-    <title>Maestroconcert | Kaartverkoop</title>
+    <title>Avond van de Filmmuziek | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link href=\"https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico\" rel=\"shortcut icon\" type=\"image/vnd.microsoft.icon\" />
@@ -60,7 +60,7 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten Maestroconcert</h2>
+        <h2>Toegangskaarten Avond van de Filmmuziek</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>
@@ -95,6 +95,8 @@ if($ns_retour_possible) {
 
 $message .= "   <img src=\"https://shot.utwente.nl/images/logos/maestrologo.png\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
+                <img src=\"https://www.euregiobrassband.nl/images/ebb_logo_signature.png\" alt=\"Euregio Logo\"
+                     style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>
     </div>
