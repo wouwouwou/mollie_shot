@@ -93,7 +93,7 @@ if($ns_retour_possible) {
     $message .= "<p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>";
 }
 
-$message .= "   <img src=\"https://shot.utwente.nl/images/logos/maestrologo.png\" alt=\"SHOT Logo\"
+$message .= "   <img src=\"https://shot.utwente.nl/images/logos/1920px-SHOT_logo.png\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
                 <img src=\"https://www.euregiobrassband.nl/images/ebb_logo_signature.png\" alt=\"Euregio Logo\"
                      style=\"width: 200px;\" class=\"img-responsive img-rounded\">
