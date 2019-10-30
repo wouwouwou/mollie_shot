@@ -13,7 +13,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Avond van de Filmmuziek | Kaartverkoop</title>
+    <title>SHOT Travels Through Time | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -85,7 +85,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            Avond van de Filmmuziek | SHOT & Euregio Brassband</h2>
+            SHOT Travels Through Time | SHOT</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -95,7 +95,7 @@
             <?php if($currently_selling) { ?>
                 U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
                 SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                inde audiozaal in gebouw de Vrijhof van de Universiteit Twente (Veldmaat 5). Toegangskaarten kosten
+                in de audiozaal in gebouw de Vrijhof van de Universiteit Twente (Veldmaat 5). Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
                 voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
@@ -252,8 +252,6 @@
         </div>
         <div class="col-md-3">
             <img src="https://shot.utwente.nl/images/logos/1920px-SHOT_logo.png" alt="SHOT Logo"
-                 style="width: 200px;" class="img-responsive img-rounded">
-            <img src="https://www.euregiobrassband.nl/images/ebb_logo_signature.png" alt="Euregio Logo"
                  style="width: 200px;" class="img-responsive img-rounded">
         </div>
     </div>

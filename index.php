@@ -68,7 +68,7 @@ try
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
         "method"       => $method,
-        "description"  => "Avond van de Filmmuziek | SHOT & Euregio Brassband " . $time,
+        "description"  => "SHOT Travels Through Time | SHOT " . $time,
         "redirectUrl"  => "https://www.shot.utwente.nl/sales/return.php?int={$time}",
         "webhookUrl"   => "https://www.shot.utwente.nl/sales/webhook.php",
         "metadata"     => array(
