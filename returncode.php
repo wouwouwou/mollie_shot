@@ -17,15 +17,13 @@ $time = $_GET["int"];
 global $concert_title,
        $normal_price,
        $student_price,
-       $ns_retour_price,
        $concert_title,
-       $ns_retour_possible,
        $concert_date,
        $concert_time;
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_st, tickets_ns FROM sales WHERE unix_time=? AND status=?");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, tickets_concert, tickets_st FROM sales WHERE unix_time=? AND status=?");
 
 $req_status = "paid";
 $sql->bind_param("ss", $time, $req_status);
@@ -37,7 +35,7 @@ if ($sql->num_rows == 0 || $sql->num_rows > 1) {
     echo "Er ging helaas iets mis! Probeer het <a href='./'>hier</a> opnieuw of neem contact op met <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a>";
     exit;
 } else {
-    $sql->bind_result($id, $voornaam, $achternaam, $email, $tickets_concert, $tickets_st, $tickets_ns);
+    $sql->bind_result($id, $voornaam, $achternaam, $email, $tickets_concert, $tickets_st);
     $sql->fetch();
 }
 
@@ -68,15 +66,9 @@ $message = "
             <h3>Uw bestelling is voltooid!</h3>
             <h5>";
 
-if($ns_retour_possible) {
-    $message .= "De toegangskaarten kunt u voor aanvang van het concert afhalen op de concertlocatie en staan op uw naam.
-                De NS Groupretours worden op een later moment verwerkt en uiterlijk één week voor het concert per e-mail
-                naar u toegezonden.<br><br>";
-} else {
-    $message .= "De toegangskaarten kunt u voor aanvang van het concert afhalen op de concertlocatie en staan op uw naam. <br><br>";
-}
 
-$message .=  "Indien u nog vragen heeft, neem dan contact met ons op via
+$message .= "De toegangskaarten kunt u voor aanvang van het concert afhalen op de concertlocatie en staan op uw naam. <br><br>
+                Indien u nog vragen heeft, neem dan contact met ons op via
 				<a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op
 				<a href='https://www.shot.utwente.nl' target=\"_blank\">www.shot.utwente.nl</a>
 			</h5>
@@ -87,13 +79,8 @@ $message .=  "Indien u nog vragen heeft, neem dan contact met ons op via
                 <p style='font-weight: bold;'>Achternaam:<br> {$achternaam}</p>
                 <p style='font-weight: bold;'>E-mail:<br> {$email}</p>
                 <p style='font-weight: bold;'>Aantal toegangskaarten:<br> {$tickets_concert}</p>
-                <p style='font-weight: bold;'>Aantal toegangskaarten (student):<br> {$tickets_st}</p>";
-
-if($ns_retour_possible) {
-    $message .= "<p style='font-weight: bold;'>Aantal NS-groepskaarten:<br> {$tickets_ns}</p>";
-}
-
-$message .= "   <img src=\"https://shot.utwente.nl/images/logos/1920px-SHOT_logo.png\" alt=\"SHOT Logo\"
+                <p style='font-weight: bold;'>Aantal toegangskaarten (student):<br> {$tickets_st}</p>
+                <img src=\"https://shot.utwente.nl/images/logos/1920px-SHOT_logo.png\" alt=\"SHOT Logo\"
                  style=\"width: 200px;\" class=\"img-responsive img-rounded\">
             </div>
         </div>

@@ -1,9 +1,7 @@
 <?php global $concert_title,
              $normal_price,
              $student_price,
-             $ns_retour_price,
              $concert_title,
-             $ns_retour_possible,
              $concert_date,
              $concert_time,
              $student_group_discount,
@@ -32,7 +30,6 @@
                 discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
             }
             var price = (aantal_concert * <?php printf("%.2f", $normal_price);?>) +
-                (aantal_ns * <?php printf("%.2f", $ns_retour_price); ?>) +
                 (aantal_st * <?php printf("%.2f", $student_price); ?>) -
                 discount;
             if(email !== email2 && price <= 0) {
@@ -68,7 +65,6 @@
                 discount = (aantal_st * <?php printf("%.2f", $student_group_discount); ?>);
             }
             var price = (aantal_concert * <?php printf("%.2f", $normal_price);?>) +
-                (aantal_ns * <?php printf("%.2f", $ns_retour_price); ?>) +
                 (aantal_st * <?php printf("%.2f", $student_price); ?>) -
                 discount;
             if (price <= 0) {
@@ -107,20 +103,8 @@
                     op iedere aangekochte studenten-toegangskaart.
                 <?php } else { ?>
                     Voor dit concert geldt geen groepskorting.
-                <?php } if($ns_retour_possible) { ?>
-                    <br><br> Komt u van ver maar wilt u dit mooie concert niet missen? Wij bieden de mogelijkheid een NS
-                    Groepsretour ticket aan te schaffen. Hiermee kunt u van een willekeurig station opstappen richting
-                    station Enschede of station Enschede Kennispark. Vanaf station Enschede kunt u de bus (lijn 1, 8 of 9)
-                    nemen richting de campus van de UT. Vanaf station Enschede Kennispark kunt u zich lopend begeven naar
-                    het sportcentrum (15 tot 20 minuten) of de bus (lijn 1) nemen richting de campus van de UT
-                    (let op: de buskosten zitten niet inbegrepen in het NS Groepsretour!). Dit ticket kost
-                    &euro;<?php printf("%.2f", $ns_retour_price); ?> en is verkrijgbaar t/m 1 juni 2017. Ook het
-                    NS Groepsretour kan online worden betaald.
-                <?php } else { ?>
-                    <br><br>Helaas is het voor dit concert niet (meer) mogelijk om een NS Groepsretour ticket bij ons aan te
-                    schaffen.
-                <?php } ?>
-            <?php } else { ?>
+            <?php }
+            } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
                 dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in het
                 Muziekcentrum te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
@@ -192,23 +176,6 @@
                         <div class="col-sm-4">
                             <input class="form-control" type="text" name="e-mail" id="email" required
                                    pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,6}">
-                        </div>
-                        <label class="control-label col-sm-4" for="aantal_ns">Aantal NS Groepsretour tickets:</label>
-                        <div class="col-sm-2">
-                            <select <?php if(!$ns_retour_possible) { ?> disabled <?php } ?>
-                                    class="form-control" name="aantal_ns" id="aantal_ns" onchange="confirmPrice()">
-                                <option value="0" selected>0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                            </select>
                         </div>
                     </div>
                     <div class="form-group">

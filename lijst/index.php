@@ -31,7 +31,7 @@ require "../initialize.php";
 global $servername, $username, $password, $dbname;
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, tickets_ns, discount, total_price FROM sales GROUP BY unix_time");
+$sql = $conn->prepare("SELECT payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, discount, total_price FROM sales GROUP BY unix_time");
 
 $sql->execute();
 $sql->store_result();
@@ -42,7 +42,7 @@ if ($sql->num_rows == 0) {
     echo "Er zijn nog geen bestellingen. :( <br><br>";
     exit;
 } else {
-    $sql->bind_result($id, $voornaam, $achternaam, $email, $time, $status, $tickets_concert, $tickets_st, $tickets_ns, $discount, $price);
+    $sql->bind_result($id, $voornaam, $achternaam, $email, $time, $status, $tickets_concert, $tickets_st, $discount, $price);
     while($sql->fetch()) {
         if ($status == "paid") {
             $total += $tickets_concert + $tickets_st;
@@ -59,7 +59,6 @@ if ($sql->num_rows == 0) {
             <td>{$status}</td>
             <td>{$tickets_concert}</td>
             <td>{$tickets_st}</td>
-            <td>{$tickets_ns}</td>
             <td>&euro;{$discount}</td>
             <td>&euro;{$price}</td>
         </tr>

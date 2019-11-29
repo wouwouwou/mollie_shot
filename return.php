@@ -2,9 +2,7 @@
 <?php global $concert_title,
              $normal_price,
              $student_price,
-             $ns_retour_price,
              $concert_title,
-             $ns_retour_possible,
              $concert_date,
              $concert_time; ?>
 <!DOCTYPE html>
@@ -29,14 +27,8 @@
         <div class="col-md-8">
             <h3>Uw bestelling is voltooid!</h3>
             <h5>
-                <?php if($ns_retour_possible) { ?>
-                    Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert afhalen
-                    op de concertlocatie en staan op uw naam. De NS Groupretours worden op een later moment verwerkt en
-                    uiterlijk één week voor het concert per e-mail naar u toegezonden.<br><br>
-                <?php } else { ?>
-                    Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
-                    afhalen op de concertlocatie en staan op uw naam. <br><br>
-                <?php } ?>
+                Er is een e-mail naar u verstuurd met daarin uw gegevens. De toegangskaarten kunt u voor aanvang van het concert
+                afhalen op de concertlocatie en staan op uw naam. <br><br>
 				Indien u binnen enkele minuten geen e-mail ontvangen heeft, of heeft u een andere vraag, neem dan contact met ons
                 op via <a href='mailto:kaartverkoop@shot.utwente.nl'>kaartverkoop@shot.utwente.nl</a> of kijk op
                 <a href='https://www.shot.utwente.nl' target="_blank">www.shot.utwente.nl</a>
