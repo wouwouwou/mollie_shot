@@ -66,7 +66,7 @@ try
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
         "method"       => $method,
-        "description"  => "SHOT Travels Through Time | SHOT " . $time,
+        "description"  => "QHarmony Meets SHOT | Kaartverkoop " . $time,
         "redirectUrl"  => "https://www.shot.utwente.nl/sales/return.php?int={$time}",
         "webhookUrl"   => "https://www.shot.utwente.nl/sales/webhook.php",
         "metadata"     => array(
@@ -115,9 +115,9 @@ function database_write ($payment_id, $firstname, $lastname, $e_mail, $time, $st
     $e_mail = htmlspecialchars($e_mail);
 
     $sql = $conn->prepare("INSERT INTO sales (payment_id, firstname, lastname, email, unix_time, status, tickets_concert, tickets_st, discount, total_price)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $sql->bind_param("ssssisiiidd",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $discount, $price);
+    $sql->bind_param("ssssisiidd",$payment_id, $firstname, $lastname, $e_mail, $time, $status, $tickets_concert, $tickets_st, $discount, $price);
 
     $result = $sql->execute();
 

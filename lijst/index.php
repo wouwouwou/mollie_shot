@@ -20,7 +20,6 @@
         <td><b>Status betaling</b></td>
         <td><b>Aantal concertkaarten</b></td>
         <td><b>Aantal concertkaarten (student)</b></td>
-        <td><b>Aantal NS-kaarten</b></td>
         <td><b>Groepskorting</b></td>
         <td><b>Prijs</b></td>
     </tr>

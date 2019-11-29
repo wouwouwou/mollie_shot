@@ -9,7 +9,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>SHOT Travels Through Time | Kaartverkoop</title>
+    <title>QHarmony Meets SHOT | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
@@ -20,7 +20,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Toegangskaarten <br>
-            SHOT Travels Through Time | SHOT</h2>
+            QHarmony Meets SHOT | Kaartverkoop</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
