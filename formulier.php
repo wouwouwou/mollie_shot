@@ -93,10 +93,10 @@
                 SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
                 op de HAN (Kapittelweg 33) te Nijmegen. Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
-                voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
+                voorverkoop (studenten en vrienden: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
                 Het is ook  mogelijk om toegangskaarten aan de deur te verkrijgen. In het geval u gebruik maakt
-                van het studenten-tarief, verzoeken wij u uw studentenkaart mee te nemen.
+                van het gereduceerde tarief, verzoeken wij u uw studentenkaart mee te nemen.
                 <?php if($student_group_discount_available) { ?>
                     Bij een groepsgrootte van minstens <?php print($student_group_discount_from_amount_of_students) ?>
                     studenten geldt er een korting van &euro; <?php printf("%.2f", $student_group_discount);?>
