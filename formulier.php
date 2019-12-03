@@ -22,7 +22,6 @@
             var email = document.getElementById("email").value;
             var email2 = document.getElementById("email2").value;
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
-            var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
             var discount = 0.00;
             if (<?php echo $student_group_discount_available ? 'true' : 'false'; ?> &&
