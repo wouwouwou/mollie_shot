@@ -57,7 +57,6 @@
         }
         function confirmPrice() {
             var aantal_concert = document.getElementById("aantal_concert").selectedIndex;
-            var aantal_ns = document.getElementById("aantal_ns").selectedIndex;
             var aantal_st = document.getElementById("aantal_st").selectedIndex;
             var discount = 0;
             if (<?php echo $student_group_discount_available ? 'true' : 'false'; ?> &&
