@@ -40,14 +40,14 @@ if ($sql->num_rows == 0 || $sql->num_rows > 1) {
 }
 
 $to = $email;
-$subject = "[SHOT] Toegangskaarten QHarmony Meets SHOT";
+$subject = "[SHOT] Toegangskaarten Bands Across The Sea";
 
 $message = "
 <html>
 <head>
-<title>[SHOT] QHarmony Meets SHOT</title>
+<title>[SHOT] Bands Across The Sea</title>
 <meta charset='UTF-8'>
-    <title>QHarmony Meets SHOT | Kaartverkoop</title>
+    <title>Bands Across The Sea | Kaartverkoop</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
     <link href=\"https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico\" rel=\"shortcut icon\" type=\"image/vnd.microsoft.icon\" />
@@ -58,7 +58,7 @@ $message = "
 
 <div class='container'>
     <div class='page-header'>
-        <h2>Toegangskaarten QHarmony Meets SHOT</h2>
+        <h2>Toegangskaarten Bands Across The Sea</h2>
     </div>
     <div class='row'>
         <div class='col-md-1'></div>

@@ -11,7 +11,7 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>QHarmony Meets SHOT | Kaartverkoop</title>
+    <title>Bands Across The Sea | Kaartverkoop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://shot.utwente.nl/templates/shaper_helix3/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -79,7 +79,7 @@
 <div class="container">
     <div class="page-header">
         <h2>Bestelformulier Toegangskaarten <br>
-            QHarmony Meets SHOT | Kaartverkoop</h2>
+            Bands Across The Sea | Kaartverkoop</h2>
     </div>
     <div class="row">
         <div class="col-md-1"></div>
@@ -87,11 +87,11 @@
             <h3>Welkom op de bestelwebsite voor <?php print($concert_title); ?></h3>
             <h5>
             <?php if($currently_selling) { ?>
-                U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?> van
-                SHOT. Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
-                op de HAN (Kapittelweg 33) te Nijmegen. Toegangskaarten kosten
+                U kunt hier toegangskaarten bestellen voor <?php print($concert_title); ?>.
+                Dit concert vindt plaats op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur
+                in de Ontmoetingskerk (Varviksingel 139) te Enschede. Toegangskaarten kosten
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk in de
-                voorverkoop (studenten en vrienden: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
+                voorverkoop (studenten: &euro;<?php printf("%.2f", $student_price); ?>) en kunnen online worden
                 betaald. De kaarten die u besteld heeft, kunt u voorafgaand aan het concert ophalen bij de ingang.
                 Het is ook  mogelijk om toegangskaarten aan de deur te verkrijgen. In het geval u gebruik maakt
                 van het gereduceerde tarief, verzoeken wij u uw studentenkaart mee te nemen.
@@ -104,8 +104,8 @@
             <?php }
             } else { ?>
                 Helaas kunt u online geen toegangskaarten meer bestellen voor <?php print($concert_title); ?>,
-                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur op de HAN (Kapittelweg 33)
-                te Nijmegen. Kaarten zijn nog wel beschikbaar aan de deur.
+                dat plaatsvindt op <?php print($concert_date); ?> om <?php print($concert_time); ?> uur in de
+                Ontmoetingskerk (Varviksingel 139) te Enschede. Kaarten zijn nog wel beschikbaar aan de deur.
                 Toegangskaarten kosten daar
                 &euro;<?php printf("%.2f", $normal_price);?> per stuk (student:
                 &euro;<?php printf("%.2f", $student_price); ?>).

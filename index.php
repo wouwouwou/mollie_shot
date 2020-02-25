@@ -66,7 +66,7 @@ try
     $payment = $mollie->payments->create(array(
         "amount"       => $price,
         "method"       => $method,
-        "description"  => "QHarmony Meets SHOT | Kaartverkoop " . $time,
+        "description"  => "Bands Across The Sea | Kaartverkoop " . $time,
         "redirectUrl"  => "https://www.shot.utwente.nl/sales/return.php?int={$time}",
         "webhookUrl"   => "https://www.shot.utwente.nl/sales/webhook.php",
         "metadata"     => array(
